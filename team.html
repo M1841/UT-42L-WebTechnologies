@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <!-- https://app.unpkg.com/vue@3.5.30/files/dist -->
+    <script src="lib/vue/3.5.30/dist/vue.global.js"></script>
+
+    <title>DeSy - Team</title>
+  </head>
+  <body>
+    <main id="app">
+      <app-header :data="header"></app-header>
+
+      [team]
+
+      <app-footer :data="footer"></app-footer>
+    </main>
+
+    <script src="data/data.js"></script>
+    <script src="src/app.js"></script>
+
+    <script src="src/components/home/Areas.js"></script>
+    <script src="src/components/home/Gallery.js"></script>
+
+    <script src="src/components/shared/Footer.js"></script>
+    <script src="src/components/shared/Header.js"></script>
+
+    <script src="src/router.js"></script>
+
+    <script>
+      app.mount("#app");
+    </script>
+  </body>
+</html>
