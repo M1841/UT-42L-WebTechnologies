@@ -5,7 +5,6 @@ app.component("app-areas", {
       required: true,
     },
   },
-  methods: {},
   template: `
     <section>
       <h1>Areas of Expertise</h1>

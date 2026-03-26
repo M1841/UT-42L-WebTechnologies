@@ -5,7 +5,6 @@ app.component("app-footer", {
       required: true,
     },
   },
-  methods: {},
   template: `
     <footer>
       <div v-for="item in data.items">

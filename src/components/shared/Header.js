@@ -5,11 +5,10 @@ app.component("app-header", {
       required: true,
     },
   },
-  methods: {},
   template: `
     <header>
       <h2>
-        <a href="/">DeSy</a>
+        <a href="index.html">DeSy</a>
       </h2>
       <nav>
         <a v-for="link of data.links" :href="link.path">

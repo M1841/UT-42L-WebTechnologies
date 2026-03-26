@@ -17,6 +17,10 @@
 
       <app-gallery :data="gallery"></app-gallery>
       <app-areas :data="areas"></app-areas>
+      <app-team-cards :data="team"></app-team-cards>
+      <app-publications-search-small :publications="publications">
+      </app-publications-search-small>
+      <app-projects :projects="projects"></app-projects>
 
       <app-footer :data="footer"></app-footer>
     </main>
@@ -24,13 +28,15 @@
     <script src="data/data.js"></script>
     <script src="src/app.js"></script>
 
-    <script src="src/components/home/Areas.js"></script>
-    <script src="src/components/home/Gallery.js"></script>
-
     <script src="src/components/shared/Footer.js"></script>
     <script src="src/components/shared/Header.js"></script>
 
-    <script src="src/router.js"></script>
+    <script src="src/components/home/Areas.js"></script>
+    <script src="src/components/home/Gallery.js"></script>
+    <script src="src/components/home/TeamCardLarge.js"></script>
+    <script src="src/components/home/TeamCards.js"></script>
+    <script src="src/components/home/PublicationsSearchSmall.js"></script>
+    <script src="src/components/home/Projects.js"></script>
 
     <script>
       app.mount("#app");

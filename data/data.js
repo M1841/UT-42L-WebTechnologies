@@ -108,87 +108,83 @@ const data = {
       },
     ],
   },
-  projects: {
-    projects: [
-      {
-        year: "2024-2026",
-        name: "Cybersecurity Seminars",
-        description:
-          "TUCN Project, funded by the Google Cybersecurity Seminars Program",
-      },
-      {
-        year: "2024-2025",
-        name: "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
-        description: "Ro-Fr Bilateral Cooperation, École Centrale de Lyon",
-      },
-      {
-        year: "2021-2023",
-        name: "The Innovative European University of Technology (Inno-EUt+)",
-        description:
-          "a HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUt+)",
-      },
-      {
-        year: "2018-2020",
-        name: "ROBIN - “Robots and Society: Cognitive Systems for Personal Robots and Autonomous Vehicle",
-        description: "PCCDI2018",
-      },
-      {
-        year: "2014-2017",
-        name: "F2S, “SCADA Federation, Collaborative Instrument for Water Management – Somes River Pilot Application”",
-        description: "National PN2- Partnerships project",
-      },
-      {
-        year: "2013-2016",
-        name: "Use of commercial drones for autonomous maintenance services in railways",
-        description: "cooperation with Siemens company",
-      },
-      {
-        year: "2014-2015",
-        name: "Cluj-Napoca: Next Generation Brained City - Software design for service monitoring at the level of the medical network, through innovative solution integration",
-        description:
-          "Sectoral Operational Programme “Increase of Economic Competitiveness” (POSCCE) project",
-      },
-      {
-        year: "2013-2017",
-        name: "ProSEco, ”Collaborative environment for design of AmI enhanced product-services integrating highly personalised innovative functions with minimal ecological footprint along life cycle and of their production processes based on collaborative environments",
-        description: "European FP7 project",
-      },
-      {
-        year: "2013-2014",
-        name: "CyCloSe, “Designing Cloud-based Self-healing Cyber-Physical Systems”",
-        description: "Ro–It Bilateral Cooperation with Politecnico di Torino",
-      },
-    ],
-  },
-  publications: {
-    publications: [
-      {
-        title:
-          "A Method for Assessing the Reliability of the Pepper Robot in Handling Office Documents: A Case Study",
-        authors: [
-          "Misaroș, M.",
-          "Stan, O.P.",
-          "Enyedi, S.",
-          "Stan, A.",
-          "Donca, I.",
-          "Miclea, L.C.",
-        ],
-        venue: "Biomimetics 2024, 9, 558",
-      },
-      {
-        title:
-          "Comprehensive Security for IoT Devices with Kubernetes and Raspberry Pi Cluster",
-        authors: [
-          "Donca, I.C.",
-          "Stan, O.P.",
-          "Misaros, M.",
-          "Stan, A.",
-          "Miclea, L.",
-        ],
-        venue: "Electronics, 2024, 13, 9",
-      },
-    ],
-  },
+  projects: [
+    {
+      year: "2024-2026",
+      name: "Cybersecurity Seminars",
+      description:
+        "TUCN Project, funded by the Google Cybersecurity Seminars Program",
+    },
+    {
+      year: "2024-2025",
+      name: "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
+      description: "Ro-Fr Bilateral Cooperation, École Centrale de Lyon",
+    },
+    {
+      year: "2021-2023",
+      name: "The Innovative European University of Technology (Inno-EUt+)",
+      description:
+        "a HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUt+)",
+    },
+    {
+      year: "2018-2020",
+      name: "ROBIN - “Robots and Society: Cognitive Systems for Personal Robots and Autonomous Vehicle",
+      description: "PCCDI2018",
+    },
+    {
+      year: "2014-2017",
+      name: "F2S, “SCADA Federation, Collaborative Instrument for Water Management – Somes River Pilot Application”",
+      description: "National PN2- Partnerships project",
+    },
+    {
+      year: "2013-2016",
+      name: "Use of commercial drones for autonomous maintenance services in railways",
+      description: "cooperation with Siemens company",
+    },
+    {
+      year: "2014-2015",
+      name: "Cluj-Napoca: Next Generation Brained City - Software design for service monitoring at the level of the medical network, through innovative solution integration",
+      description:
+        "Sectoral Operational Programme “Increase of Economic Competitiveness” (POSCCE) project",
+    },
+    {
+      year: "2013-2017",
+      name: "ProSEco, ”Collaborative environment for design of AmI enhanced product-services integrating highly personalised innovative functions with minimal ecological footprint along life cycle and of their production processes based on collaborative environments",
+      description: "European FP7 project",
+    },
+    {
+      year: "2013-2014",
+      name: "CyCloSe, “Designing Cloud-based Self-healing Cyber-Physical Systems”",
+      description: "Ro–It Bilateral Cooperation with Politecnico di Torino",
+    },
+  ],
+  publications: [
+    {
+      title:
+        "A Method for Assessing the Reliability of the Pepper Robot in Handling Office Documents: A Case Study",
+      authors: [
+        "Misaroș, M.",
+        "Stan, O.P.",
+        "Enyedi, S.",
+        "Stan, A.",
+        "Donca, I.",
+        "Miclea, L.C.",
+      ],
+      venue: "Biomimetics 2024, 9, 558",
+    },
+    {
+      title:
+        "Comprehensive Security for IoT Devices with Kubernetes and Raspberry Pi Cluster",
+      authors: [
+        "Donca, I.C.",
+        "Stan, O.P.",
+        "Misaros, M.",
+        "Stan, A.",
+        "Miclea, L.",
+      ],
+      venue: "Electronics, 2024, 13, 9",
+    },
+  ],
   team: {
     director: {
       name: {

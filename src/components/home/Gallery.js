@@ -5,7 +5,6 @@ app.component("app-gallery", {
       required: true,
     },
   },
-  methods: {},
   template: `
     <section>
       <img v-for="image in data.images" :src="image" />
