@@ -45,22 +45,22 @@ app.component("app-team-card-large", {
       }, 5000);
     }
   },
-  template: `
-    <div>
-      <p>{{ header }}</p>
-      <div>
-        <img :src="members[visibleMemberIndex].image" />
+  template: /* html */ `
+    <div class="team-card-large">
+      <p class="team-header">{{ header }}</p>
+      <div class="member-display">
+        <img class="member-image" :src="members[visibleMemberIndex].image" />
         <h3>{{ title }} {{ members[visibleMemberIndex].name.first }} {{ members[visibleMemberIndex].name.last }} {{ hasPhd ? "PhD" : ""}}</h3>
-        <div>
-          <a>[]</a>
-          <a>[]</a>
-          <a>[]</a>
+        <div class="member-links">
+          <a class="link-btn">E</a>
+          <a class="link-btn">L</a>
+          <a class="link-btn">G</a>
         </div>
       </div>
-      <div v-if="members.length > 1">
-        <button @click="decrementIndex">&lt;</button>
-        {{ visibleMemberIndex + 1 }} / {{ members.length }}
-        <button @click="incrementIndex">&gt;</button>
+      <div class="member-nav" v-if="members.length > 1">
+        <button class="nav-btn" @click="decrementIndex">&lt;</button>
+        <span class="page-indicator">{{ visibleMemberIndex + 1 }} / {{ members.length }}</span>
+        <button class="nav-btn" @click="incrementIndex">&gt;</button>
       </div>
     </div>
   `,

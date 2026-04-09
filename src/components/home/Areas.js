@@ -5,17 +5,19 @@ app.component("app-areas", {
       required: true,
     },
   },
-  template: `
-    <section>
+  template: /* html */ `
+    <section class="areas">
       <h1>Areas of Expertise</h1>
-      <div v-for="area in data.areas">
-        <img :src="area.image" />
-        <h2>{{ area.title }}</h2>
-        <ul>
-          <li v-for="paragraph in area.paragraphs">
-            {{ paragraph }}
-          </li>
-        </ul>
+      <div class="areas-list">
+        <div class="area-item" v-for="area in data.areas">
+          <img :src="area.image" />
+          <h2>{{ area.title }}</h2>
+          <ul>
+            <li v-for="paragraph in area.paragraphs">
+              {{ paragraph }}
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   `,

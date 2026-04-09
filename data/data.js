@@ -83,12 +83,14 @@ const data = {
           "Analysis, design, implementation and validation of dependable CPSs used in water resources management, electrical power generation and transport, cloud-fog-edge infrastructure",
           "Application of artificial intelligence techniques in energy production, medicine, food quality control",
         ],
+        img: " ",
       },
       {
         title: "Consulting",
         paragraphs: [
           "Consulting, research, design, development of dependable information systems and intelligent systems for industrial and scientific environment",
         ],
+        img: " ",
       },
       {
         title: "Applied engineering services",
@@ -97,6 +99,7 @@ const data = {
           "Programming and software and hardware consultancy services",
           "Intelligent systems design and implementation services",
         ],
+        img: " ",
       },
       {
         title: "Training: Dependability basics",
@@ -105,6 +108,7 @@ const data = {
           "Software testing techniques: functional testing, structural testing, use of software testing frameworks",
           "Artificial intelligence techniques: AI agents, multi-agent systems, machine learning",
         ],
+        img: " ",
       },
     ],
   },
@@ -114,48 +118,57 @@ const data = {
       name: "Cybersecurity Seminars",
       description:
         "TUCN Project, funded by the Google Cybersecurity Seminars Program",
+      image: " ",
     },
     {
       year: "2024-2025",
       name: "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
       description: "Ro-Fr Bilateral Cooperation, École Centrale de Lyon",
+      image: " ",
     },
     {
       year: "2021-2023",
       name: "The Innovative European University of Technology (Inno-EUt+)",
       description:
         "a HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUt+)",
+      image: " ",
     },
     {
       year: "2018-2020",
       name: "ROBIN - “Robots and Society: Cognitive Systems for Personal Robots and Autonomous Vehicle",
       description: "PCCDI2018",
+      image: " ",
     },
     {
       year: "2014-2017",
       name: "F2S, “SCADA Federation, Collaborative Instrument for Water Management – Somes River Pilot Application”",
       description: "National PN2- Partnerships project",
+      image: " ",
     },
     {
       year: "2013-2016",
       name: "Use of commercial drones for autonomous maintenance services in railways",
       description: "cooperation with Siemens company",
+      image: " ",
     },
     {
       year: "2014-2015",
       name: "Cluj-Napoca: Next Generation Brained City - Software design for service monitoring at the level of the medical network, through innovative solution integration",
       description:
         "Sectoral Operational Programme “Increase of Economic Competitiveness” (POSCCE) project",
+      image: " ",
     },
     {
       year: "2013-2017",
       name: "ProSEco, ”Collaborative environment for design of AmI enhanced product-services integrating highly personalised innovative functions with minimal ecological footprint along life cycle and of their production processes based on collaborative environments",
       description: "European FP7 project",
+      image: " ",
     },
     {
       year: "2013-2014",
       name: "CyCloSe, “Designing Cloud-based Self-healing Cyber-Physical Systems”",
       description: "Ro–It Bilateral Cooperation with Politecnico di Torino",
+      image: " ",
     },
   ],
   publications: [

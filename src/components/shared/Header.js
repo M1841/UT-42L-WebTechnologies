@@ -5,8 +5,8 @@ app.component("app-header", {
       required: true,
     },
   },
-  template: `
-    <header>
+  template: /* html */ `
+    <header class="header">
       <h2>
         <a href="index.html">DeSy</a>
       </h2>

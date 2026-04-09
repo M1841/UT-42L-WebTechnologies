@@ -29,14 +29,19 @@ app.component("app-publications-search-small", {
       }
     },
   },
-  template: `
-    <section>
-      <h2>Publications</h2>
-      <input @input="handleInput" type="text" />
-      <a href="publications.html">View more</a>
-      <div v-if="results.length > 0">
-        <div v-for="result in results">
-          <h3>{{ result.title }}</h3>
+  template: /* html */ `
+    <section class="publications">
+      <h1>Publications</h1>
+      <div class="search-container">
+        <input class="search-input" @input="handleInput" type="text" placeholder="Search publications..." />
+        <div class="results" v-if="results.length > 0">
+          <div class="result-item" v-for="result in results">
+            <h3>{{ result.title }}</h3>
+            <p class="authors">{{ result.authors.join('; ') }}</p>
+            <p class="venue">{{ result.venue }}</p>
+            <a href="#" class="read-more">Read more</a>
+          </div>
+          <a class="view-more" href="publications.html">View more</a>
         </div>
       </div>
     </section>

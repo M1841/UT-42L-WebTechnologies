@@ -5,29 +5,33 @@ app.component("app-team-cards", {
       required: true,
     },
   },
-  template: `
-    <section>
-      <h2>Our Team</h2>
+  template: /* html */ `
+    <section class="team">
+      <h1>Our Team</h1>
+      <div class="team-groups">
+        <app-team-card-large
+          class="team-group"
+          :members="[data.director]"
+          header="Director"
+          title="Prof. Eng."
+          hasPhd
+        ></app-team-card-large>
 
-      <app-team-card-large
-        :members="[data.director]"
-        header="Director"
-        title="Prof. Eng."
-        hasPhd
-      ></app-team-card-large>
+        <app-team-card-large
+          class="team-group"
+          :members="data.professors"
+          header="Professors"
+          title="Prof. Eng."
+          hasPhd
+        ></app-team-card-large>
 
-      <app-team-card-large
-        :members="data.professors"
-        header="Professors"
-        title="Prof. Eng."
-        hasPhd
-      ></app-team-card-large>
-
-      <app-team-card-large
-        :members="data.phdStudents"
-        header="PhD Students"
-        title="Eng."
-      ></app-team-card-large>
+        <app-team-card-large
+          class="team-group"
+          :members="data.phdStudents"
+          header="PhD Students"
+          title="Eng."
+        ></app-team-card-large>
+      </div>
     </section>
   `,
 });
