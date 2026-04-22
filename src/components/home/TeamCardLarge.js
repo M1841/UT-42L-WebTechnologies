@@ -52,9 +52,9 @@ app.component("app-team-card-large", {
         <img class="member-image" :src="members[visibleMemberIndex].image" />
         <h3>{{ title }} {{ members[visibleMemberIndex].name.first }} {{ members[visibleMemberIndex].name.last }} {{ hasPhd ? "PhD" : ""}}</h3>
         <div class="member-links">
-          <a class="link-btn">E</a>
-          <a class="link-btn">L</a>
-          <a class="link-btn">G</a>
+          <a :href="'mailto:' + members[visibleMemberIndex].links.email" class="link-btn fas fa-envelope"></a>
+          <a :href="members[visibleMemberIndex].links.linkedin" class="link-btn fab fa-linkedin"></a>
+          <a :href="members[visibleMemberIndex].links.googleScholar" class="link-btn fab fa-google"></a>
         </div>
       </div>
       <div class="member-nav" v-if="members.length > 1">

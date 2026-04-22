@@ -14,7 +14,7 @@ app.component("app-team-cards", {
           :members="[data.director]"
           header="Director"
           title="Prof. Eng."
-          hasPhd
+          has-phd
         ></app-team-card-large>
 
         <app-team-card-large
@@ -22,7 +22,7 @@ app.component("app-team-cards", {
           :members="data.professors"
           header="Professors"
           title="Prof. Eng."
-          hasPhd
+          has-phd
         ></app-team-card-large>
 
         <app-team-card-large

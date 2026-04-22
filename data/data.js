@@ -184,6 +184,7 @@ const data = {
         "Miclea, L.C.",
       ],
       venue: "Biomimetics 2024, 9, 558",
+      year: 2024,
     },
     {
       title:
@@ -196,6 +197,7 @@ const data = {
         "Miclea, L.",
       ],
       venue: "Electronics, 2024, 13, 9",
+      year: 2024,
     },
   ],
   team: {
@@ -205,7 +207,11 @@ const data = {
         last: "Miclea",
       },
       image: " ",
-      email: "Liviu.Miclea@aut.utcluj.ro",
+      links: {
+        email: "Liviu.Miclea@aut.utcluj.ro",
+        linkedin: "",
+        googleScholar: "",
+      },
     },
     professors: [
       {
@@ -214,6 +220,11 @@ const data = {
           last: "Vălean",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -221,6 +232,11 @@ const data = {
           last: "Folea",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -228,6 +244,11 @@ const data = {
           last: "Stan",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -235,6 +256,11 @@ const data = {
           last: "Enyedi",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -242,6 +268,11 @@ const data = {
           last: "Goța",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -249,6 +280,11 @@ const data = {
           last: "Ștefan",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -256,6 +292,11 @@ const data = {
           last: "Corcheș",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -263,6 +304,11 @@ const data = {
           last: "Pop",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -270,6 +316,11 @@ const data = {
           last: "Fanca",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -277,6 +328,11 @@ const data = {
           last: "Domuța",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -284,6 +340,11 @@ const data = {
           last: "Misaroș",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
     ],
     phdStudents: [
@@ -293,6 +354,11 @@ const data = {
           last: "Futo",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -300,6 +366,11 @@ const data = {
           last: "Niți",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -307,6 +378,11 @@ const data = {
           last: "Stanciu",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -314,6 +390,11 @@ const data = {
           last: "Bejan",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -321,6 +402,11 @@ const data = {
           last: "Ciobotaru",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -328,6 +414,11 @@ const data = {
           last: "Covrig",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -335,6 +426,11 @@ const data = {
           last: "Farmathy-Pop",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -342,6 +438,11 @@ const data = {
           last: "Dobre",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -349,6 +450,11 @@ const data = {
           last: "Dobra",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -356,6 +462,11 @@ const data = {
           last: "Muscan",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -363,6 +474,11 @@ const data = {
           last: "Dologa",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -370,6 +486,11 @@ const data = {
           last: "Drăghici",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -377,6 +498,11 @@ const data = {
           last: "Flutur",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
       {
         name: {
@@ -384,6 +510,11 @@ const data = {
           last: "Jibotean",
         },
         image: " ",
+        links: {
+          email: "",
+          linkedin: "",
+          googleScholar: "",
+        },
       },
     ],
   },

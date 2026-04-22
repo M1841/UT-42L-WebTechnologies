@@ -213,9 +213,6 @@ html {
 }
 
 .link-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -224,6 +221,7 @@ html {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 600;
+  padding-top: 8px;
 }
 
 .member-nav {
@@ -535,4 +533,358 @@ html {
   font-size: 0.75rem;
   opacity: 0.6;
   margin-top: 1rem;
+}
+
+.director {
+  padding: 2rem;
+}
+
+.director h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1f;
+}
+
+.director-card {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.director-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.director-info {
+  flex: 1;
+}
+
+.director-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1f;
+}
+
+.director-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.director-publications h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #1a1a1f;
+}
+
+.publication-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.publication-item {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.publication-item h4 {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1f;
+}
+
+.publication-item .authors {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.publication-item .venue {
+  font-size: 0.75rem;
+  color: #999;
+  font-style: italic;
+}
+
+.publication-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .director-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .director-links {
+    justify-content: center;
+  }
+}
+
+.team-member-cards,
+.team-professors {
+  padding: 2rem;
+}
+
+.team-member-cards h1,
+.team-professors h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1f;
+}
+
+.members-list,
+.professors-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member-card,
+.professor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.member-card .member-image,
+.professor-card .professor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.member-info h2,
+.professor-info h2 {
+  font-size: 1rem;
+  color: #1a1a1f;
+  margin-bottom: 0.5rem;
+}
+
+.member-links,
+.professor-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .members-list,
+  .professors-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.publications-search {
+  padding: 2rem;
+}
+
+.publications-search h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1f;
+}
+
+.publications-search .search-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publications-search .search-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.publications-search .search-input:focus {
+  outline: none;
+  border-color: #1a1a1f;
+}
+
+.publications-search .filters {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.filter-checkboxes {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.filter-checkboxes input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.year-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.year-filter label {
+  font-size: 0.875rem;
+}
+
+.dual-slider {
+  position: relative;
+  width: 200px;
+  height: 20px;
+}
+
+.dual-slider input[type="range"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  background: transparent;
+  -webkit-appearance: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dual-slider input[type="range"]:first-of-type {
+  z-index: 2;
+}
+
+.dual-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  background-color: #1a1a1f;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.dual-slider input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 4px;
+}
+
+.dual-slider input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  background-color: #1a1a1f;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.dual-slider-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 4px;
+  background-color: #ddd;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.dual-slider-range {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  background-color: #1a1a1f;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.publications-search .results {
+  max-width: 1200px;
+  margin: 1rem auto 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.publications-search .result-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.publications-search .result-item:last-of-type {
+  border-bottom: none;
+}
+
+.publications-search .result-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1f;
+}
+
+.publications-search .result-item .authors {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.publications-search .result-item .venue {
+  font-size: 0.875rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.publications-search .result-item .read-more {
+  font-size: 0.875rem;
+  color: #1a1a1f;
+  text-decoration: underline;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .publications-search .filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .year-filter input[type="range"] {
+    width: 100%;
+  }
 }
