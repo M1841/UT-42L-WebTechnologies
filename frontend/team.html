@@ -16,36 +16,21 @@
   </head>
   <body>
     <main id="app">
-      <app-header :data="header"></app-header>
+      <app-header></app-header>
 
-      <app-team-director
-        :director="team.director"
-        :publications="publications"
-      ></app-team-director>
-      <app-team-member-cards
-        :members="team.professors"
-        title="Professors"
-        member-title="Prof. Eng."
-        :has-phd="true"
-      ></app-team-member-cards>
-      <app-team-member-cards
-        :members="team.phdStudents"
-        title="PhD Students"
-        member-title="Eng."
-      ></app-team-member-cards>
+      <app-team-director></app-team-director>
+      <app-team-member-cards type="professors"></app-team-member-cards>
+      <app-team-member-cards type="phdstudents"></app-team-member-cards>
 
-      <app-footer :data="footer"></app-footer>
+      <app-footer></app-footer>
     </main>
 
-    <script src="data/data.js"></script>
     <script src="src/app.js"></script>
 
     <script src="src/components/shared/Footer.js"></script>
     <script src="src/components/shared/Header.js"></script>
     <script src="src/components/team/TeamDirector.js"></script>
     <script src="src/components/team/TeamMemberCards.js"></script>
-
-    <script src="src/router.js"></script>
 
     <script>
       app.mount("#app");

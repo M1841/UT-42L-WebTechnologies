@@ -1,14 +1,16 @@
 app.component("app-publications-search-small", {
-  props: {
-    publications: {
-      type: Object,
-      required: true,
-    },
-  },
   data() {
     return {
+      publications: undefined,
       results: [],
     };
+  },
+  mounted() {
+    fetch("/api/publications").then((res) => {
+      res.json().then((json) => {
+        this.publications = json;
+      });
+    });
   },
   methods: {
     handleInput(event) {
@@ -35,7 +37,7 @@ app.component("app-publications-search-small", {
       <div class="search-container">
         <input class="search-input" @input="handleInput" type="text" placeholder="Search publications..." />
         <div class="results" v-if="results.length > 0">
-          <div class="result-item" v-for="result in results">
+          <div class="result-item" v-for="result in results" :key="result.title">
             <h3>{{ result.title }}</h3>
             <p class="authors">{{ result.authors.join('; ') }}</p>
             <p class="venue">{{ result.venue }}</p>

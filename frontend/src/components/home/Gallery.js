@@ -1,7 +1,7 @@
 app.component("app-gallery", {
   data() {
     return {
-      gallery: {},
+      gallery: undefined,
     };
   },
   mounted() {
@@ -12,8 +12,8 @@ app.component("app-gallery", {
     });
   },
   template: /* html */ `
-    <section class="gallery">
-      <img v-for="image in gallery.images" :src="image" />
+    <section class="gallery" v-if="gallery">
+      <img v-for="image in gallery.images" :key="image" :src="image" />
     </section>
   `,
 });

@@ -1,5 +1,1 @@
-const app = Vue.createApp({
-  data() {
-    return data;
-  },
-});
+const app = Vue.createApp({});

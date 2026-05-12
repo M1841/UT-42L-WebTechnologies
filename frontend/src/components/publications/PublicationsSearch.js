@@ -1,12 +1,7 @@
 app.component("app-publications-search", {
-  props: {
-    publications: {
-      type: Array,
-      required: true,
-    },
-  },
   data() {
     return {
+      publications: undefined,
       searchQuery: "",
       filterTitle: true,
       filterAuthor: true,
@@ -15,45 +10,56 @@ app.component("app-publications-search", {
       maxYear: 2026,
       rangeMin: 2000,
       rangeMax: 2026,
+      searchTimer: null,
     };
   },
   computed: {
-    filteredPublications() {
-      return this.publications.filter((pub) => {
-        const query = this.searchQuery.toLowerCase();
-        if (!query && pub.year >= this.rangeMin && pub.year <= this.rangeMax)
-          return true;
-        if (!query) return false;
-
-        let matches = false;
-        if (this.filterTitle && pub.title.toLowerCase().includes(query)) {
-          matches = true;
-        }
-        if (
-          this.filterAuthor &&
-          pub.authors.some((author) => author.toLowerCase().includes(query))
-        ) {
-          matches = true;
-        }
-        if (this.filterVenue && pub.venue.toLowerCase().includes(query)) {
-          matches = true;
-        }
-        if (matches && pub.year >= this.rangeMin && pub.year <= this.rangeMax) {
-          return true;
-        }
-        return false;
-      });
+    searchParams() {
+      const params = new URLSearchParams();
+      if (this.searchQuery) params.set("search", this.searchQuery);
+      params.set("filterTitle", this.filterTitle);
+      params.set("filterAuthor", this.filterAuthor);
+      params.set("filterVenue", this.filterVenue);
+      params.set("minYear", this.rangeMin);
+      params.set("maxYear", this.rangeMax);
+      return params.toString();
+    },
+  },
+  watch: {
+    searchParams() {
+      if (this.searchTimer) clearTimeout(this.searchTimer);
+      this.searchTimer = setTimeout(() => this.fetchPublications(), 300);
     },
   },
   methods: {
+    fetchPublications() {
+      fetch("/api/publications/search?" + this.searchParams).then((res) => {
+        res.json().then((json) => {
+          this.publications = json;
+        });
+      });
+    },
     updateMinYear(event) {
       const value = parseInt(event.target.value);
-      this.rangeMin = value;
+      if (value > this.rangeMax) {
+        event.target.value = this.rangeMax;
+        this.rangeMin = this.rangeMax;
+      } else {
+        this.rangeMin = value;
+      }
     },
     updateMaxYear(event) {
       const value = parseInt(event.target.value);
-      this.rangeMax = value;
+      if (value < this.rangeMin) {
+        event.target.value = this.rangeMin;
+        this.rangeMax = this.rangeMin;
+      } else {
+        this.rangeMax = value;
+      }
     },
+  },
+  mounted() {
+    this.fetchPublications();
   },
   template: /* html */ `
     <section class="publications-search">
@@ -110,13 +116,13 @@ app.component("app-publications-search", {
         </div>
       </div>
       <div class="results">
-        <div class="result-item" v-for="pub in filteredPublications">
+        <div class="result-item" v-for="pub in publications" :key="pub.title">
           <h3>{{ pub.title }}</h3>
           <p class="authors">{{ pub.authors.join('; ') }}</p>
           <p class="venue">{{ pub.venue }}</p>
           <a href="#" class="read-more">Read more</a>
         </div>
-        <div v-if="filteredPublications.length === 0" class="no-results">
+        <div v-if="publications && publications.length === 0" class="no-results">
           No publications found
         </div>
       </div>

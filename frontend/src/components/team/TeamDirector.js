@@ -1,16 +1,8 @@
 app.component("app-team-director", {
-  props: {
-    director: {
-      type: Object,
-      required: true,
-    },
-    publications: {
-      type: Array,
-      required: true,
-    },
-  },
   data() {
     return {
+      director: undefined,
+      publications: undefined,
       visibleIndex: 0,
     };
   },
@@ -18,10 +10,12 @@ app.component("app-team-director", {
     directorPublications() {
       const lastName = this.director.name.last.toLowerCase();
       const firstInitial = this.director.name.first.charAt(0).toLowerCase();
-      return this.publications.filter(pub => {
-        return pub.authors.some(author => {
+      return this.publications.filter((pub) => {
+        return pub.authors.some((author) => {
           const authorLower = author.toLowerCase();
-          return authorLower.includes(lastName) && authorLower.includes(firstInitial);
+          return (
+            authorLower.includes(lastName) && authorLower.includes(firstInitial)
+          );
         });
       });
     },
@@ -43,14 +37,22 @@ app.component("app-team-director", {
     },
   },
   mounted() {
-    if (this.directorPublications.length > 1) {
-      setInterval(() => {
-        this.incrementIndex();
-      }, 5000);
-    }
+    Promise.all([
+      fetch("/api/team").then((res) => res.json()),
+      fetch("/api/publications").then((res) => res.json()),
+    ]).then(([team, publications]) => {
+      this.director = team.director;
+      this.publications = publications;
+
+      if (this.directorPublications.length > 1) {
+        setInterval(() => {
+          this.incrementIndex();
+        }, 5000);
+      }
+    });
   },
   template: /* html */ `
-    <section class="director">
+    <section class="director" v-if="director">
       <h1>Director</h1>
       <div class="director-card">
         <img :src="director.image" class="director-image" />

@@ -16,21 +16,18 @@
   </head>
   <body>
     <main id="app">
-      <app-header :data="header"></app-header>
+      <app-header></app-header>
 
-      <app-publications-search :publications="publications"></app-publications-search>
+      <app-publications-search></app-publications-search>
 
-      <app-footer :data="footer"></app-footer>
+      <app-footer></app-footer>
     </main>
 
-    <script src="data/data.js"></script>
     <script src="src/app.js"></script>
 
     <script src="src/components/shared/Footer.js"></script>
     <script src="src/components/shared/Header.js"></script>
     <script src="src/components/publications/PublicationsSearch.js"></script>
-
-    <script src="src/router.js"></script>
 
     <script>
       app.mount("#app");

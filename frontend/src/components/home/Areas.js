@@ -1,7 +1,7 @@
 app.component("app-areas", {
   data() {
     return {
-      areas: {},
+      areas: undefined,
     };
   },
   mounted() {
@@ -12,14 +12,14 @@ app.component("app-areas", {
     });
   },
   template: /* html */ `
-    <section class="areas">
+    <section class="areas" v-if="areas">
       <h1>Areas of Expertise</h1>
       <div class="areas-list">
-        <div class="area-item" v-for="area in areas.areas">
+        <div class="area-item" v-for="area in areas.areas" :key="area.title">
           <img :src="area.image" />
           <h2>{{ area.title }}</h2>
           <ul>
-            <li v-for="paragraph in area.paragraphs">
+            <li v-for="paragraph in area.paragraphs" :key="paragraph">
               {{ paragraph }}
             </li>
           </ul>
