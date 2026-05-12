@@ -1,9 +1,15 @@
 app.component("app-offer", {
-  props: {
-    offer: {
-      type: Object,
-      required: true,
-    },
+  data() {
+    return {
+      offer: {},
+    };
+  },
+  mounted() {
+    fetch("/api/home/offer").then((res) => {
+      res.json().then((json) => {
+        this.offer = json;
+      });
+    });
   },
   template: /* html */ `
     <section class="offer">

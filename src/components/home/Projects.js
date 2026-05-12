@@ -1,12 +1,7 @@
 app.component("app-projects", {
-  props: {
-    projects: {
-      type: Array,
-      required: true,
-    },
-  },
   data() {
     return {
+      projects: undefined,
       visibleIndex: 0,
     };
   },
@@ -27,14 +22,20 @@ app.component("app-projects", {
     },
   },
   mounted() {
-    if (this.projects.length > 1) {
-      setInterval(() => {
-        this.next();
-      }, 5000);
-    }
+    fetch("/api/home/projects").then((res) => {
+      res.json().then((json) => {
+        this.projects = json;
+
+        if (this.projects.length > 1) {
+          setInterval(() => {
+            this.next();
+          }, 5000);
+        }
+      });
+    });
   },
   template: /* html */ `
-    <section class="projects">
+    <section class="projects" v-if="projects">
       <h1>Representative Projects</h1>
       <div class="project-carousel">
         <div class="project-card">

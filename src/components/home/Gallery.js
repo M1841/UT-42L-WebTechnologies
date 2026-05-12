@@ -1,13 +1,19 @@
 app.component("app-gallery", {
-  props: {
-    data: {
-      type: Object,
-      required: true,
-    },
+  data() {
+    return {
+      gallery: {},
+    };
+  },
+  mounted() {
+    fetch("/api/home/gallery").then((res) => {
+      res.json().then((json) => {
+        this.gallery = json;
+      });
+    });
   },
   template: /* html */ `
     <section class="gallery">
-      <img v-for="image in data.images" :src="image" />
+      <img v-for="image in gallery.images" :src="image" />
     </section>
   `,
 });
