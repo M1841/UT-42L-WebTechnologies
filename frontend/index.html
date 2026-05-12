@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <!-- https://app.unpkg.com/vue@3.5.30/files/dist -->
+    <script src="lib/vue/3.5.30/dist/vue.global.js"></script>
+
+    <!-- https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-web.zip -->
+    <link rel="stylesheet" href="lib/fontawesome/5.15.4/css/all.css" />
+
+    <title>DeSy</title>
+  </head>
+  <body>
+    <main id="app">
+      <app-header :data="header"></app-header>
+
+      <app-gallery></app-gallery>
+      <app-areas></app-areas>
+      <app-team-cards :data="team"></app-team-cards>
+      <app-publications-search-small :publications="publications">
+      </app-publications-search-small>
+      <app-projects></app-projects>
+      <app-offer></app-offer>
+
+      <app-footer :data="footer"></app-footer>
+    </main>
+
+    <script src="data/data.js"></script>
+    <script src="src/app.js"></script>
+
+    <script src="src/components/shared/Footer.js"></script>
+    <script src="src/components/shared/Header.js"></script>
+
+    <script src="src/components/home/Areas.js"></script>
+    <script src="src/components/home/Gallery.js"></script>
+    <script src="src/components/home/TeamCardLarge.js"></script>
+    <script src="src/components/home/TeamCards.js"></script>
+    <script src="src/components/home/PublicationsSearchSmall.js"></script>
+    <script src="src/components/home/Projects.js"></script>
+    <script src="src/components/home/Offer.js"></script>
+
+    <script>
+      app.mount("#app");
+    </script>
+  </body>
+</html>
