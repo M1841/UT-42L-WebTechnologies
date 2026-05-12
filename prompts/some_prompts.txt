@@ -3,6 +3,8 @@ Tooling: anomalyco/opencode
 
 (we implemented the data placeholder and most of the homepage layout and base css, then asked the ai to continue)
 
+[build] Extend the css by styling all components according to their visual description from `concept.txt`
+
 [build] Home page: display projects from data.js with image and details divs
 
 [build] The director and professors on the team page should all have Prof. Eng. and PhD like on the homepage
