@@ -1,0 +1,34 @@
+Model: openai/gpt-oss-20b:f16
+Tooling: anomalyco/opencode
+
+(we implemented the data placeholder and most of the homepage layout and base css, then asked the ai to continue)
+
+[build] Home page: display projects from data.js with image and details divs
+
+[build] The director and professors on the team page should all have Prof. Eng. and PhD like on the homepage
+
+[build] The director's publications should be left-aligned. Also, make sure to only filter publications containing the director's last name and first name initial as one of the authors
+
+[build] Make the publications pagination controls appear below the publication, not inside it
+
+[build] Wherever publication authors are displayed, they should be semicolon delimited
+
+[build] On the Publications page, add a searchbar, checkboxes for restricting searches to "title" "author" and/or "venue", and also a double slider input for filtering by year
+
+[build] There should only be one slider, allowing for selecting both the lower and upper bound
+
+[build] I can't move the sliders and I can't see the line behind them
+
+[build] Make sure the bounds cannot be inverted (lower bound higher than higher bound)
+
+[build] Make it so that the visual bound indicators (the circles) also cannot be inverted
+
+[build] When the low slider is in the leftmost position, there should be no lower bound, and when the high slider is in the rightmost position, there should be no higher bound
+
+[build] I added a year field to each publication, make sure it's checked when filtering
+
+(we implemented backend code for data storage, endpoints for all the homepage components and some get methods for the other pages, then asked the ai to continue)
+
+[build] Continue the backend implementation. All services have implemented GET endpoints and the home service has its controller implemented. Add the other controllers and add search functionality to the publications service
+
+[build] Use `v-if` like in `Projects.js` to make sure components don't render when their data is undefined. And make sure all data is undefined until fetched
