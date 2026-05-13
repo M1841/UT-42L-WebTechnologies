@@ -16,7 +16,7 @@ app.component("app-offer", {
       <h1>{{ $i18n.t('offer_title') }}</h1>
       <div class="offer-list">
         <div class="offer-item" v-for="(issue, index) in offer.issues" :key="index" :class="{ 'even': index % 2 === 1 }">
-          <img src=" " />
+          <img :src="issue.img" />
           <div class="offer-content">
             <h3>{{ issue.title }}</h3>
             <ul>

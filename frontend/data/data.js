@@ -2,7 +2,7 @@ const data = {
   areas: {
     areas: [
       {
-        image: "images/expertise/dep_sec.jpg",
+        image: "data/images/expertise/dep_sec.jpg",
         title: "Dependability. Security",
         paragraphs: [
           "Development of intelligent techniques for dependability (availability, reliability, safety, security, integrity and maintainability), security (confidentially) and testing of information system",
@@ -10,7 +10,7 @@ const data = {
         ],
       },
       {
-        image: "images/expertise/CPS.jpg",
+        image: "data/images/expertise/CPS.jpg",
         title: "Cyber-Physical Systems",
         paragraphs: [
           "Development of abstractions, models, architectures and tools to allow implementation of reliable CPSs (including areas as cloud-fog-edge architectures) made from unsafe components and resistant CPSs at cyber or physical attacks",
@@ -18,7 +18,7 @@ const data = {
         ],
       },
       {
-        image: "images/expertise/intell_sys.jpg",
+        image: "data/images/expertise/intell_sys.jpg",
         title: "Intelligent Systems",
         paragraphs: [
           "Analyses, design, implementation and testing of intelligent real-time control and monitoring systems using artificial intelligence techniques (intelligent agents, fuzzy logic, machine learning, decision support systems, deep neural networks",

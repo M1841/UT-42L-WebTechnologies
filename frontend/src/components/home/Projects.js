@@ -3,6 +3,7 @@ app.component("app-projects", {
     return {
       projects: undefined,
       visibleIndex: 0,
+      timer: null,
     };
   },
   methods: {
@@ -12,6 +13,7 @@ app.component("app-projects", {
       } else {
         this.visibleIndex++;
       }
+      this.resetTimer();
     },
     prev() {
       if (this.visibleIndex === 0) {
@@ -19,20 +21,40 @@ app.component("app-projects", {
       } else {
         this.visibleIndex--;
       }
+      this.resetTimer();
+    },
+    startTimer() {
+      if (this.projects && this.projects.length > 1) {
+        this.timer = setInterval(() => {
+          if (this.visibleIndex === this.projects.length - 1) {
+            this.visibleIndex = 0;
+          } else {
+            this.visibleIndex++;
+          }
+        }, 5000);
+      }
+    },
+    resetTimer() {
+      if (this.timer) {
+        clearInterval(this.timer);
+        this.startTimer();
+      }
     },
   },
   mounted() {
     fetch("/api/home/projects?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.projects = json;
-
-        if (this.projects.length > 1) {
-          setInterval(() => {
-            this.next();
-          }, 5000);
-        }
+        this.$nextTick(() => {
+          this.startTimer();
+        });
       });
     });
+  },
+  beforeUnmount() {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
   },
   template: /* html */ `
     <section class="projects" v-if="projects">

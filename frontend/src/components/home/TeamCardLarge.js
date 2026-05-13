@@ -20,15 +20,17 @@ app.component("app-team-card-large", {
   data() {
     return {
       visibleMemberIndex: 0,
+      timer: null,
     };
   },
   methods: {
-    incrementIndex() {
+    incrementIndex(manual = false) {
       if (this.visibleMemberIndex == this.members.length - 1) {
         this.visibleMemberIndex = 0;
       } else {
         this.visibleMemberIndex++;
       }
+      if (manual) this.resetTimer();
     },
     decrementIndex() {
       if (this.visibleMemberIndex == 0) {
@@ -36,14 +38,31 @@ app.component("app-team-card-large", {
       } else {
         this.visibleMemberIndex--;
       }
+      this.resetTimer();
+    },
+    startTimer() {
+      if (this.members.length > 1) {
+        this.timer = setInterval(() => {
+          this.incrementIndex();
+        }, 5000);
+      }
+    },
+    stopTimer() {
+      if (this.timer) {
+        clearInterval(this.timer);
+        this.timer = null;
+      }
+    },
+    resetTimer() {
+      this.stopTimer();
+      this.startTimer();
     },
   },
   mounted() {
-    if (this.members.length > 1) {
-      setInterval(() => {
-        this.incrementIndex();
-      }, 5000);
-    }
+    this.startTimer();
+  },
+  beforeUnmount() {
+    this.stopTimer();
   },
   template: /* html */ `
     <div class="team-card-large">
@@ -60,7 +79,7 @@ app.component("app-team-card-large", {
       <div class="member-nav" v-if="members.length > 1">
         <button class="nav-btn" @click="decrementIndex">&lt;</button>
         <span class="page-indicator">{{ visibleMemberIndex + 1 }} / {{ members.length }}</span>
-        <button class="nav-btn" @click="incrementIndex">&gt;</button>
+        <button class="nav-btn" @click="incrementIndex(true)">&gt;</button>
       </div>
     </div>
   `,
