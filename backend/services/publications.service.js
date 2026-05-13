@@ -2,14 +2,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const db = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "..", "data", "db.json"), "utf-8"),
-);
+const dbPath = path.join(__dirname, "..", "data", "db.json");
+const getDb = () => JSON.parse(fs.readFileSync(dbPath, "utf-8"));
 
 export const publications = {
-  get: () => db.publications,
+  get: () => getDb().publications,
   search: (query, filterTitle, filterAuthor, filterVenue, minYear, maxYear) =>
-    db.publications.filter((pub) => {
+    getDb().publications.filter((pub) => {
       if (!query && pub.year >= minYear && pub.year <= maxYear) return true;
       if (!query) return false;
 

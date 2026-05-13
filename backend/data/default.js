@@ -125,57 +125,57 @@ export const data = {
       name: "Cybersecurity Seminars",
       description:
         "TUCN Project, funded by the Google Cybersecurity Seminars Program",
-      image: "data/images/publications/cyber_sem.jpg",
+      image: "data/images/projects/cyber_sem.jpg",
     },
     {
       year: "2024-2025",
       name: "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
       description: "Ro-Fr Bilateral Cooperation, École Centrale de Lyon",
-      image: "data/images/publications/fortifyai.jpg",
+      image: "data/images/projects/fortifyai.jpg",
     },
     {
       year: "2021-2023",
       name: "The Innovative European University of Technology (Inno-EUt+)",
       description:
         "a HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUt+)",
-      image: "data/images/publications/innoeut.jpg",
+      image: "data/images/projects/innoeut.jpg",
     },
     {
       year: "2018-2020",
       name: "ROBIN - “Robots and Society: Cognitive Systems for Personal Robots and Autonomous Vehicle",
       description: "PCCDI2018",
-      image: " ",
+      image: "data/images/projects/robin.jpg",
     },
     {
       year: "2014-2017",
       name: "F2S, “SCADA Federation, Collaborative Instrument for Water Management – Somes River Pilot Application”",
       description: "National PN2- Partnerships project",
-      image: " ",
+      image: "data/images/projects/somes.png",
     },
     {
       year: "2013-2016",
       name: "Use of commercial drones for autonomous maintenance services in railways",
       description: "cooperation with Siemens company",
-      image: " ",
+      image: "data/images/projects/train.png",
     },
     {
       year: "2014-2015",
       name: "Cluj-Napoca: Next Generation Brained City - Software design for service monitoring at the level of the medical network, through innovative solution integration",
       description:
         "Sectoral Operational Programme “Increase of Economic Competitiveness” (POSCCE) project",
-      image: " ",
+      image: "data/images/projects/medical.jpg",
     },
     {
       year: "2013-2017",
       name: "ProSEco, ”Collaborative environment for design of AmI enhanced product-services integrating highly personalised innovative functions with minimal ecological footprint along life cycle and of their production processes based on collaborative environments",
       description: "European FP7 project",
-      image: " ",
+      image: "data/images/projects/aml.jpg",
     },
     {
       year: "2013-2014",
       name: "CyCloSe, “Designing Cloud-based Self-healing Cyber-Physical Systems”",
       description: "Ro–It Bilateral Cooperation with Politecnico di Torino",
-      image: " ",
+      image: "data/images/projects/cloud.jpg",
     },
   ],
   publications: [

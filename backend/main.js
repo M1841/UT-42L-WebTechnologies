@@ -1,6 +1,9 @@
 import cors from "cors";
 import express from "express";
 import path from "path";
+import { seed } from "./services/db.service.js";
+
+seed();
 
 import homeController from "./controllers/home.controller.js";
 import publicationsController from "./controllers/publications.controller.js";
@@ -21,8 +24,3 @@ app.use("/api/shared", sharedController);
 app.listen(8080, () => {
   console.log("Server running at http://127.0.0.1:8080");
 });
-
-// (async () => {
-//   const { seed } = await import("./services/db.service.js");
-//   seed();
-// })();

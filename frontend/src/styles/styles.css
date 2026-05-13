@@ -314,9 +314,13 @@ html[data-theme="light"] {
   background-color: var(--link-btn-bg);
   color: white;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.875rem; 
   font-weight: 600;
-  padding-top: 8px;
+  padding-top: 8px;   
+  display: flex;         
+  align-items: center;   
+  justify-content: center;  
+  text-align: center;   
 }
 
 .member-nav {

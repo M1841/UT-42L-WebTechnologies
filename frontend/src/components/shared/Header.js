@@ -55,7 +55,7 @@ app.component("app-header", {
           {{ $i18n.t(link.name) }}
         </a>
         <button class="theme-toggle" @click="toggleTheme">
-          {{ isDark ? '☀️' : '🌙' }}
+          <i :class="isDark ? 'fas fa-sun' : 'fas fa-moon'"></i>
         </button>
       </nav>
     </header>

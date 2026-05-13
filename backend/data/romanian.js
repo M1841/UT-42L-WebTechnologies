@@ -37,7 +37,7 @@ export const ro = {
   areas: {
     areas: [
       {
-        image: " ",
+        image: "data/images/expertise/dep_sec.jpg",
         title: "Siguranță. Securitate",
         paragraphs: [
           "Dezvoltarea de tehnici inteligente pentru siguranță (disponibilitate, fiabilitate, securitate, integritate și mentenanță), securitate cibernetică și testarea sistemelor informaționale",
@@ -45,7 +45,7 @@ export const ro = {
         ],
       },
       {
-        image: " ",
+        image: "data/images/expertise/CPS.jpg",
         title: "Sisteme Ciber-Fizice",
         paragraphs: [
           "Dezvoltarea de abstractizări, modele, arhitecturi și instrumente pentru implementarea CPS-urilor fiabile (inclusiv domenii precum arhitecturi cloud-fog-edge) realizate din componente nesigure și CPS-uri rezistente la atacuri cibernetice sau fizice",
@@ -53,7 +53,7 @@ export const ro = {
         ],
       },
       {
-        image: " ",
+        image: "data/images/expertise/intell_sys.jpg",
         title: "Sisteme Inteligente",
         paragraphs: [
           "Analiza, proiectarea, implementarea și testarea sistemelor inteligente de control și monitorizare în timp real folosind tehnici de inteligență artificială (agenți inteligenți, logică fuzzy, învățare automată, sisteme de suport decizional, rețele neuronale profunde)",
@@ -71,14 +71,14 @@ export const ro = {
           "Analiza, proiectarea, implementarea și validarea CPS-urilor sigure utilizate în managementul resurselor de apă, producția și transportul energiei electrice, infrastructura cloud-fog-edge",
           "Aplicarea tehnicilor de inteligență artificială în producția de energie, medicină, controlul calității alimentelor",
         ],
-        img: " ",
+        img: "data/images/offers/rnd.jpg",
       },
       {
         title: "Consultanță",
         paragraphs: [
           "Consultanță, cercetare, proiectare, dezvoltare de sisteme informaționale sigure și sisteme inteligente pentru mediul industrial și științific",
         ],
-        img: " ",
+        img: "data/images/offers/consulting.jpg",
       },
       {
         title: "Servicii de inginerie aplicată",
@@ -87,7 +87,7 @@ export const ro = {
           "Servicii de consultanță în programare software și hardware",
           "Servicii de proiectare și implementare sisteme inteligente",
         ],
-        img: " ",
+        img: "data/images/offers/aes.jpg",
       },
       {
         title: "Training: Bazele siguranței sistemelor",
@@ -96,7 +96,7 @@ export const ro = {
           "Tehnici de testare software: testare funcțională, testare structurală, utilizarea framework-urilor de testare software",
           "Tehnici de inteligență artificială: agenți AI, sisteme multi-agent, învățare automată",
         ],
-        img: " ",
+        img: "data/images/offers/training.jpg",
       },
     ],
   },
@@ -106,59 +106,59 @@ export const ro = {
       name: "Seminarii de Securitate Cibernetică",
       description:
         "Proiect UTCN, finanțat prin Programul Google Cybersecurity Seminars",
-      image: " ",
+      image: "data/images/projects/cyber_sem.jpg",
     },
     {
       year: "2024-2025",
       name: "FortifyAI: Îmbunătățirea Eficienței, Fiabilității și Securității prin Co-Proiectare HW-SW Integrată pentru Algoritmi AI",
       description:
         "Cooperare bilaterală România-Franța, École Centrale de Lyon",
-      image: " ",
+      image: "data/images/projects/fortifyai.jpg",
     },
     {
       year: "2021-2023",
       name: "Universitatea Europeană Inovatoare de Tehnologie (Inno-EUt+)",
       description:
         "un proiect al inițiativei HEI care vizează îmbunătățirea capacității de inovare și antreprenoriat a unei noi alianțe universitare europene, Universitatea Europeană de Tehnologie (EUt+)",
-      image: " ",
+      image: "data/images/projects/innoeut.jpg",
     },
     {
       year: "2018-2020",
       name: "ROBIN - „Roboți și Societate: Sisteme Cognitive pentru Roboți Personali și Vehicule Autonome”",
       description: "PCCDI2018",
-      image: " ",
+      image: "data/images/projects/robin.jpg",
     },
     {
       year: "2014-2017",
       name: "F2S, „Federație SCADA, Instrument Colaborativ pentru Managementul Apelor – Aplicație Pilot Râul Someș”",
       description: "Proiect național PN2-Parteneriate",
-      image: " ",
+      image: "data/images/projects/somes.png",
     },
     {
       year: "2013-2016",
       name: "Utilizarea dronelor comerciale pentru servicii autonome de întreținere în căile ferate",
       description: "cooperare cu compania Siemens",
-      image: " ",
+      image: "data/images/projects/train.png",
     },
     {
       year: "2014-2015",
       name: "Cluj-Napoca: Oraș Inteligent de Nouă Generație - Proiectare software pentru monitorizarea serviciilor la nivelul rețelei medicale, prin integrarea de soluții inovatoare",
       description:
         "Proiect POSCCE - Programul Operațional Sectorial „Creșterea Competitivității Economice”",
-      image: " ",
+      image: "data/images/projects/medical.jpg",
     },
     {
       year: "2013-2017",
       name: "ProSEco, „Mediu colaborativ pentru proiectarea de produs-servicii îmbunătățite cu AmI, integrând funcții inovatoare înalt personalizate cu amprentă ecologică minimă pe parcursul ciclului de viață și a proceselor lor de producție bazate pe medii colaborative”",
       description: "Proiect european FP7",
-      image: " ",
+      image: "data/images/projects/aml.jpg",
     },
     {
       year: "2013-2014",
       name: "CyCloSe, „Proiectarea sistemelor ciber-fizice cu auto-vindecare bazate pe cloud”",
       description:
         "Cooperare bilaterală România–Italia cu Politecnico di Torino",
-      image: " ",
+      image: "data/images/projects/cloud.jpg",
     },
   ],
 };
