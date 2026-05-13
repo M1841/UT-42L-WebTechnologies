@@ -33,10 +33,13 @@ app.component("app-team-member-cards", {
     <section class="team-member-cards" v-if="members">
       <h1>{{ title }}</h1>
       <div class="members-list">
-        <div class="member-card" v-for="member in members" :key="member.name.first + member.name.last">
+        <div class="member-card" :class="{ 'professor-only': type === 'professors' }" v-for="member in members" :key="member.name.first + member.name.last">
           <img :src="member.image ?? 'https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t'" class="member-image" />
           <div class="member-info">
             <h2>{{ memberTitle }} {{ member.name.first }} {{ member.name.last }} {{ hasPhd ? $i18n.t('phd') : "" }}</h2>
+            <div class="disciplines" v-if="member.disciplines">
+              <span class="discipline-tag" v-for="discipline in member.disciplines" :key="discipline">{{ discipline }}</span>
+            </div>
             <div class="member-links">
               <a v-if="member.links.email" :href="'mailto:' + member.links.email" class="link-btn fas fa-envelope"></a>
               <a v-if="member.links.linkedin" :href="member.links.linkedin" class="link-btn fab fa-linkedin"></a>

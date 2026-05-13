@@ -508,6 +508,13 @@ export const data = {
         googleScholar:
           "https://scholar.google.com/citations?user=NH--aSUAAAAJ&hl=en",
       },
+      disciplines: [
+        "Reliability and Diagnosis",
+        "Testing of Information Systems",
+        "Computer-Aided Design",
+        "Distributed Systems",
+        "Dependability",
+      ],
     },
     professors: [
       {
@@ -522,6 +529,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=LVJtl2kAAAAJ&hl=ro",
         },
+        disciplines: [
+          "Databases",
+          "Distributed Control Systems",
+          "Software Systems Engineering",
+          "Industrial Informatics",
+        ],
       },
       {
         name: {
@@ -535,6 +548,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=nQaILkAAAAAJ&hl=ro",
         },
+        disciplines: [
+          "Embedded Systems",
+          "Data Acquisition Systems",
+          "Reconfigurable Systems",
+          "Wireless Sensor Networks",
+        ],
       },
       {
         name: {
@@ -548,6 +567,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=37dl-9oAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Digital Security",
+          "Reliability and Diagnosis",
+          "Project Preparing Methodology",
+          "Mobile Application Development",
+        ],
       },
       {
         name: {
@@ -561,6 +586,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=Qcly87MAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Reliability and Diagnosis",
+          "Web Technologies",
+          "Project Management",
+          "Digital Graphics",
+        ],
       },
       {
         name: {
@@ -574,6 +605,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com.hk/citations?user=pLH2dGYAAAAJ",
         },
+        disciplines: [
+          "Computer Programming",
+          "Operating Systems and Networks",
+          "Dependability",
+          "Continuous Integration and Deployment",
+        ],
       },
       {
         name: {
@@ -587,6 +624,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=RaKdkMYAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Decision Support Systems",
+          "Software Application Development and Testing",
+          "Technology for Education",
+          "Augmented Reality Applications",
+        ],
       },
       {
         name: {
@@ -600,6 +643,12 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=Vk_uH7gAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Embedded Systems",
+          "Internet of Things",
+          "Dependability",
+          "Interoperability",
+        ],
       },
       {
         name: {
@@ -613,6 +662,11 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=N-PgEDoAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Autonomous Driving: Technology, Dynamics and Control",
+          "Indoor Air Quality Monitoring",
+          "Machine Learning Applications",
+        ],
       },
       {
         name: {
@@ -626,6 +680,11 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=GyRxLkoAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Software Engineering",
+          "Information Systems",
+          "Indoor Air Quality Monitoring",
+        ],
       },
       {
         name: {
@@ -639,6 +698,10 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=yX9sRDwAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Systems Engineering",
+          "Computer Programming",
+        ],
       },
       {
         name: {
@@ -652,6 +715,11 @@ export const data = {
           googleScholar:
             "https://scholar.google.com/citations?user=E_0BTCgAAAAJ&hl=ro&oi=ao",
         },
+        disciplines: [
+          "Reliability and Diagnosis",
+          "Continuous Integration and Deployment",
+          "Computer Programming",
+        ],
       },
     ],
     phdStudents: [

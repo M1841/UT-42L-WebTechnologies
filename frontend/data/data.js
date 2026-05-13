@@ -212,6 +212,13 @@ const data = {
         linkedin: "",
         googleScholar: "",
       },
+      disciplines: [
+        "Reliability and Diagnosis",
+        "Testing of Information Systems",
+        "Computer-Aided Design",
+        "Distributed Systems",
+        "Dependability",
+      ],
     },
     professors: [
       {
@@ -225,6 +232,12 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Databases",
+          "Distributed Control Systems",
+          "Software Systems Engineering",
+          "Industrial Informatics",
+        ],
       },
       {
         name: {
@@ -237,6 +250,14 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Embedded Systems",
+          "Data Acquisition Systems",
+          "Reconfigurable Systems",
+          "Wireless Sensor Networks",
+          "Graphical Programming (LabVIEW)",
+          "Hardware Development",
+        ],
       },
       {
         name: {
@@ -249,6 +270,13 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Project Management",
+          "Reliability and Diagnosis",
+          "Programming Multimedia and Web Page Design",
+          "Mobile Application Development",
+          "Advanced Internet Technologies",
+        ],
       },
       {
         name: {
@@ -261,6 +289,21 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Reliability and Diagnosis",
+          "Advanced Internet Technologies",
+          "User Interface Programming",
+          "Applications for the WWW",
+          "Web Technologies",
+          "Project Management",
+          "Digital Graphics",
+          "Computer-Aided Design",
+          "Distributed Control Systems",
+          "Process Equipment and Interfaces",
+          "Computer Programming",
+          "Advanced Programming",
+          "Operating Systems and Networks",
+        ],
       },
       {
         name: {
@@ -273,6 +316,12 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Computer Programming",
+          "Operating Systems and Networks",
+          "Dependability",
+          "Continuous Integration and Deployment",
+        ],
       },
       {
         name: {
@@ -285,6 +334,12 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Decision Support Systems",
+          "Software Application Development and Testing",
+          "Technology for Education",
+          "Augmented Reality Applications",
+        ],
       },
       {
         name: {
@@ -297,6 +352,13 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Embedded Systems",
+          "Cloud, Fog and Edge Computing",
+          "Internet of Things",
+          "Dependability",
+          "Interoperability",
+        ],
       },
       {
         name: {
@@ -309,6 +371,11 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Autonomous Driving: Technology, Dynamics and Control",
+          "Indoor Air Quality Monitoring",
+          "Machine Learning Applications",
+        ],
       },
       {
         name: {
@@ -321,6 +388,11 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Software Engineering",
+          "Information Systems",
+          "Indoor Air Quality Monitoring",
+        ],
       },
       {
         name: {
@@ -333,6 +405,10 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Systems Engineering",
+          "Computer Programming",
+        ],
       },
       {
         name: {
@@ -345,6 +421,11 @@ const data = {
           linkedin: "",
           googleScholar: "",
         },
+        disciplines: [
+          "Service Robots",
+          "Continuous Integration and Deployment",
+          "Computer Programming",
+        ],
       },
     ],
     phdStudents: [

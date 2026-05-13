@@ -689,6 +689,22 @@ html[data-theme="light"] {
   margin-bottom: 1.5rem;
 }
 
+.disciplines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.discipline-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--surface-bg);
+  border-radius: 12px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
 .director-publications h3 {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -803,6 +819,22 @@ html[data-theme="light"] {
   margin-top: 1rem;
   min-height: 40px;
   align-items: center;
+}
+
+.member-card.professor-only {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card.professor-only .member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card.professor-only .member-links {
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {

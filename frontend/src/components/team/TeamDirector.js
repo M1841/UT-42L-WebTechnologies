@@ -59,6 +59,9 @@ app.component("app-team-director", {
         <img :src="director.image" class="director-image" />
         <div class="director-info">
           <h2>{{ $i18n.t('prof_eng') }} {{ director.name.first }} {{ director.name.last }} {{ $i18n.t('phd') }}</h2>
+          <div class="disciplines" v-if="director.disciplines">
+            <span class="discipline-tag" v-for="discipline in director.disciplines" :key="discipline">{{ discipline }}</span>
+          </div>
           <div class="director-links">
             <a :href="'mailto:' + director.links.email" class="link-btn fas fa-envelope"></a>
             <a :href="director.links.linkedin" class="link-btn fab fa-linkedin"></a>
