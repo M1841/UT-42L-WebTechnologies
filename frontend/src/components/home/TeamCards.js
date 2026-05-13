@@ -5,7 +5,7 @@ app.component("app-team-cards", {
     };
   },
   mounted() {
-    fetch("/api/team").then((res) => {
+    fetch("/api/team?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.team = json;
       });
@@ -13,14 +13,14 @@ app.component("app-team-cards", {
   },
   template: /* html */ `
     <section class="team" v-if="team">
-      <h1>Our Team</h1>
+      <h1>{{ $i18n.t('our_team') }}</h1>
       <div class="team-groups">
         <app-team-card-large
           v-if="team.director"
           class="team-group"
           :members="[team.director]"
-          header="Director"
-          title="Prof. Eng."
+          :header="$i18n.t('director')"
+          :title="$i18n.t('prof_eng')"
           has-phd
         ></app-team-card-large>
 
@@ -28,8 +28,8 @@ app.component("app-team-cards", {
           v-if="team.professors"
           class="team-group"
           :members="team.professors"
-          header="Professors"
-          title="Prof. Eng."
+          :header="$i18n.t('professors')"
+          :title="$i18n.t('prof_eng')"
           has-phd
         ></app-team-card-large>
 
@@ -37,8 +37,8 @@ app.component("app-team-cards", {
           v-if="team.phdStudents"
           class="team-group"
           :members="team.phdStudents"
-          header="PhD Students"
-          title="Eng."
+          :header="$i18n.t('phd_students')"
+          :title="$i18n.t('eng')"
         ></app-team-card-large>
       </div>
     </section>

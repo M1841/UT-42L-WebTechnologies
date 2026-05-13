@@ -6,7 +6,7 @@ app.component("app-publications-search-small", {
     };
   },
   mounted() {
-    fetch("/api/publications").then((res) => {
+    fetch("/api/publications?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.publications = json;
       });
@@ -33,17 +33,17 @@ app.component("app-publications-search-small", {
   },
   template: /* html */ `
     <section class="publications">
-      <h1>Publications</h1>
+      <h1>{{ $i18n.t('publications') }}</h1>
       <div class="search-container">
-        <input class="search-input" @input="handleInput" type="text" placeholder="Search publications..." />
+        <input class="search-input" @input="handleInput" type="text" :placeholder="$i18n.t('search_publications')" />
         <div class="results" v-if="results.length > 0">
           <div class="result-item" v-for="result in results" :key="result.title">
             <h3>{{ result.title }}</h3>
             <p class="authors">{{ result.authors.join('; ') }}</p>
             <p class="venue">{{ result.venue }}</p>
-            <a :href="result.link" class="read-more">Read more</a>
+            <a :href="result.link" class="read-more">{{ $i18n.t('read_more') }}</a>
           </div>
-          <a class="view-more" href="publications.html">View more</a>
+          <a class="view-more" href="publications.html">{{ $i18n.t('view_more') }}</a>
         </div>
       </div>
     </section>

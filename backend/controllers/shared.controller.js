@@ -5,12 +5,14 @@ import { footer as footerService } from "../services/shared.service.js";
 
 const sharedRouter = express.Router();
 
-sharedRouter.get("/header", (_, res) => {
-  return res.status(200).send(headerService.get());
+sharedRouter.get("/header", (req, res) => {
+  const lang = req.query.lang ?? "en";
+  return res.status(200).send(headerService.get(lang));
 });
 
-sharedRouter.get("/footer", (_, res) => {
-  return res.status(200).send(footerService.get());
+sharedRouter.get("/footer", (req, res) => {
+  const lang = req.query.lang ?? "en";
+  return res.status(200).send(footerService.get(lang));
 });
 
 export default sharedRouter;

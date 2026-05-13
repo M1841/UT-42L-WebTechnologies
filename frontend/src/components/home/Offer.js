@@ -5,7 +5,7 @@ app.component("app-offer", {
     };
   },
   mounted() {
-    fetch("/api/home/offer").then((res) => {
+    fetch("/api/home/offer?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.offer = json;
       });
@@ -13,7 +13,7 @@ app.component("app-offer", {
   },
   template: /* html */ `
     <section class="offer" v-if="offer">
-      <h1>The offer addressed to the economic environment</h1>
+      <h1>{{ $i18n.t('offer_title') }}</h1>
       <div class="offer-list">
         <div class="offer-item" v-for="(issue, index) in offer.issues" :key="index" :class="{ 'even': index % 2 === 1 }">
           <img src=" " />

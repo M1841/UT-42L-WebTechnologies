@@ -5,7 +5,7 @@ app.component("app-header", {
     };
   },
   mounted() {
-    fetch("/api/shared/header").then((res) => {
+    fetch("/api/shared/header?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.links = json.links;
       });
@@ -18,7 +18,7 @@ app.component("app-header", {
       </h2>
       <nav v-if="links">
         <a v-for="link of links" :key="link.path" :href="link.path">
-          {{ link.name }}
+          {{ $i18n.t(link.name) }}
         </a>
       </nav>
     </header>

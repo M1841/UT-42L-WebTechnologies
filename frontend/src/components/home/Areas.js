@@ -5,7 +5,7 @@ app.component("app-areas", {
     };
   },
   mounted() {
-    fetch("/api/home/areas").then((res) => {
+    fetch("/api/home/areas?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.areas = json;
       });
@@ -13,7 +13,7 @@ app.component("app-areas", {
   },
   template: /* html */ `
     <section class="areas" v-if="areas">
-      <h1>Areas of Expertise</h1>
+      <h1>{{ $i18n.t('areas_of_expertise') }}</h1>
       <div class="areas-list">
         <div class="area-item" v-for="area in areas.areas" :key="area.title">
           <img :src="area.image" />

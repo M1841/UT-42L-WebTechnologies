@@ -8,26 +8,29 @@ import { projects as projectsService } from "../services/home.service.js";
 const home = express.Router();
 
 const areas = express.Router();
-areas.get("/", (_, res) => {
-  return res.status(200).send(areasService.get());
+areas.get("/", (req, res) => {
+  const lang = req.query.lang ?? "en";
+  return res.status(200).send(areasService.get(lang));
 });
 home.use("/areas", areas);
 
 const gallery = express.Router();
-gallery.get("/", (_, res) => {
+gallery.get("/", (req, res) => {
   return res.status(200).send(galleryService.get());
 });
 home.use("/gallery", gallery);
 
 const offer = express.Router();
-offer.get("/", (_, res) => {
-  return res.status(200).send(offerService.get());
+offer.get("/", (req, res) => {
+  const lang = req.query.lang ?? "en";
+  return res.status(200).send(offerService.get(lang));
 });
 home.use("/offer", offer);
 
 const projects = express.Router();
-projects.get("/", (_, res) => {
-  return res.status(200).send(projectsService.get());
+projects.get("/", (req, res) => {
+  const lang = req.query.lang ?? "en";
+  return res.status(200).send(projectsService.get(lang));
 });
 home.use("/projects", projects);
 

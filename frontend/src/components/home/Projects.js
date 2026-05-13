@@ -22,7 +22,7 @@ app.component("app-projects", {
     },
   },
   mounted() {
-    fetch("/api/home/projects").then((res) => {
+    fetch("/api/home/projects?lang=" + window.i18n.locale).then((res) => {
       res.json().then((json) => {
         this.projects = json;
 
@@ -36,7 +36,7 @@ app.component("app-projects", {
   },
   template: /* html */ `
     <section class="projects" v-if="projects">
-      <h1>Representative Projects</h1>
+      <h1>{{ $i18n.t('representative_projects') }}</h1>
       <div class="project-carousel">
         <div class="project-card">
           <img :src="projects[visibleIndex].image" />

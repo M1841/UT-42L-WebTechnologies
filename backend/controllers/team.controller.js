@@ -4,8 +4,7 @@ import { team } from "../services/team.service.js";
 
 const teamRouter = express.Router();
 
-// Return team data
-teamRouter.get("/", (_, res) => {
+teamRouter.get("/", (req, res) => {
   return res.status(200).send(team.get());
 });
 

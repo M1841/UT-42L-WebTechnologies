@@ -37,9 +37,10 @@ app.component("app-team-director", {
     },
   },
   mounted() {
+    const locale = window.i18n.locale;
     Promise.all([
-      fetch("/api/team").then((res) => res.json()),
-      fetch("/api/publications").then((res) => res.json()),
+      fetch("/api/team?lang=" + locale).then((res) => res.json()),
+      fetch("/api/publications?lang=" + locale).then((res) => res.json()),
     ]).then(([team, publications]) => {
       this.director = team.director;
       this.publications = publications;
@@ -53,18 +54,18 @@ app.component("app-team-director", {
   },
   template: /* html */ `
     <section class="director" v-if="director">
-      <h1>Director</h1>
+      <h1>{{ $i18n.t('director') }}</h1>
       <div class="director-card">
         <img :src="director.image" class="director-image" />
         <div class="director-info">
-          <h2>Prof. Eng. {{ director.name.first }} {{ director.name.last }} PhD</h2>
+          <h2>{{ $i18n.t('prof_eng') }} {{ director.name.first }} {{ director.name.last }} {{ $i18n.t('phd') }}</h2>
           <div class="director-links">
             <a :href="'mailto:' + director.links.email" class="link-btn fas fa-envelope"></a>
             <a :href="director.links.linkedin" class="link-btn fab fa-linkedin"></a>
             <a :href="director.links.googleScholar" class="link-btn fab fa-google"></a>
           </div>
           <div class="director-publications" v-if="directorPublications.length > 0">
-            <h3>Recent Publications</h3>
+            <h3>{{ $i18n.t('recent_publications') }}</h3>
             <a :href="directorPublications[visibleIndex].link" style="text-decoration: none">
               <div class="publication-item">
                 <h4>{{ directorPublications[visibleIndex].title }}</h4>

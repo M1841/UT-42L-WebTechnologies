@@ -22,6 +22,7 @@ app.component("app-publications-search", {
       params.set("filterVenue", this.filterVenue);
       params.set("minYear", this.rangeMin);
       params.set("maxYear", this.rangeMax);
+      params.set("lang", window.i18n.locale);
       return params.toString();
     },
   },
@@ -63,31 +64,31 @@ app.component("app-publications-search", {
   },
   template: /* html */ `
     <section class="publications-search">
-      <h1>Publications</h1>
+      <h1>{{ $i18n.t('publications') }}</h1>
       <div class="search-container">
         <input
           class="search-input"
           v-model="searchQuery"
           type="text"
-          placeholder="Search publications..."
+          :placeholder="$i18n.t('search_publications')"
         />
         <div class="filters">
           <div class="filter-checkboxes">
             <label>
               <input type="checkbox" v-model="filterTitle" />
-              Title
+              {{ $i18n.t('filter_title') }}
             </label>
             <label>
               <input type="checkbox" v-model="filterAuthor" />
-              Author
+              {{ $i18n.t('filter_author') }}
             </label>
             <label>
               <input type="checkbox" v-model="filterVenue" />
-              Venue
+              {{ $i18n.t('filter_venue') }}
             </label>
           </div>
           <div class="year-filter">
-            <label>Year: {{ rangeMin }} - {{ rangeMax }}</label>
+            <label>{{ $i18n.t('year') }}: {{ rangeMin }} - {{ rangeMax }}</label>
             <div class="dual-slider">
               <div class="dual-slider-track"></div>
               <div
@@ -120,10 +121,10 @@ app.component("app-publications-search", {
           <h3>{{ pub.title }}</h3>
           <p class="authors">{{ pub.authors.join('; ') }}</p>
           <p class="venue">{{ pub.venue }}</p>
-          <a :href="pub.link" class="read-more">Read more</a>
+          <a :href="pub.link" class="read-more">{{ $i18n.t('read_more') }}</a>
         </div>
         <div v-if="publications && publications.length === 0" class="no-results">
-          No publications found
+          {{ $i18n.t('no_publications') }}
         </div>
       </div>
     </section>

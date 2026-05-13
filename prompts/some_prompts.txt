@@ -35,6 +35,12 @@ Tooling: anomalyco/opencode
 
 [build] Use `v-if` like in `Projects.js` to make sure components don't render when their data is undefined. And make sure all data is undefined until fetched
 
+[build] Implement light<->dark theme switching logic on the client side
+
+[build] Add language switching logic (english <-> romanian). For now just keep it client-side and make the backend only log the requested language while still returning english regardless
+
+[build] Now update the backend to serve data in the requested language. Do not change the english default data, instead add a separate export for the romanian translations
+
 --------------------------------------------------------------------------------------
 
 Model: openai/gpt-oss-20b:f16

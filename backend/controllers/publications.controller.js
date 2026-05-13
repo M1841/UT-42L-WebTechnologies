@@ -4,12 +4,10 @@ import { publications } from "../services/publications.service.js";
 
 const publicationsRouter = express.Router();
 
-// Return all publications
-publicationsRouter.get("/", (_, res) => {
+publicationsRouter.get("/", (req, res) => {
   return res.status(200).send(publications.get());
 });
 
-// Search endpoint with query parameters
 publicationsRouter.get("/search", (req, res) => {
   const query = (req.query.search ?? "").toString().toLowerCase();
   const filterTitle = req.query.filterTitle !== "false";
