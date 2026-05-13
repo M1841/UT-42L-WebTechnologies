@@ -35,4 +35,11 @@ Tooling: anomalyco/opencode
 
 [build] Use `v-if` like in `Projects.js` to make sure components don't render when their data is undefined. And make sure all data is undefined until fetched
 
-[plan] Considering the following text [...] extract the publications into an array of JSON objects in the following schema: `{title:string, authors:string[], venue:string, year:number}`. An author should be formatted lastname-comma-space-initial-dot, as in "Doe, J." or "Parker, P.B." for multiple initials. For the venue keep the year, id and other numbers that may appear. The year can be extracted from the publication string if not otherwise specified.
+--------------------------------------------------------------------------------------
+
+Model: openai/gpt-oss-20b:f16
+Tooling: llama-server
+
+(shared a string with all publications copied directly from the desy pdf to have the ai format it)
+
+Considering the following text [...] extract the publications into an array of JSON objects in the following schema: `{title:string, authors:string[], venue:string, year:number}`. An author should be formatted lastname-comma-space-initial-dot, as in "Doe, J." or "Parker, P.B." for multiple initials. For the venue keep the year, id and other numbers that may appear. The year can be extracted from the publication string if not otherwise specified.
