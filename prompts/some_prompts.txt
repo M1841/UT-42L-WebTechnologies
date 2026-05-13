@@ -3,43 +3,29 @@ Tooling: anomalyco/opencode
 
 (we implemented the data placeholder and most of the homepage layout and base css, then asked the ai to continue)
 
-[build] Extend the css by styling all components according to their visual description from `concept.txt`
+[build] Style every component based on its visual description in `concept.txt`. Use CSS custom properties. Follow mobile-first responsive design guidelines. Do not use inline styles. Ensure all existing class names are preserved and extended.
 
-[build] Home page: display projects from data.js with image and details divs
+[build] On the Home page, fetch projects from the placeholder `data/data.js` file and display them in a new section. Each project card must include and `<img>` tag and a `<div>` tag containing the title, description and year(s) corresponding to its projects.
 
-[build] The director and professors on the team page should all have Prof. Eng. and PhD like on the homepage
+[build] On the Team page, format each member's academic titles using `Prof.`, `Eng.` and `PhD`, matching the existing formatting from the Home page member cards.
 
-[build] The director's publications should be left-aligned. Also, make sure to only filter publications containing the director's last name and first name initial as one of the authors
+[build] On the Publications page, add a searchbar and a year range filter using a single slider with two handles for the minimum and maximum years. Also add checkboxes to restrict the searching to "title", "author" and/or "venue" (default to all).
 
-[build] Make the publications pagination controls appear below the publication, not inside it
+[build] Make sure the slider bounds and visual handles never invert. For the handles, use JS code to snap them back in place whenever they would otherwise move out of bounds.
 
-[build] Wherever publication authors are displayed, they should be semicolon delimited
-
-[build] On the Publications page, add a searchbar, checkboxes for restricting searches to "title" "author" and/or "venue", and also a double slider input for filtering by year
-
-[build] There should only be one slider, allowing for selecting both the lower and upper bound
-
-[build] I can't move the sliders and I can't see the line behind them
-
-[build] Make sure the bounds cannot be inverted (lower bound higher than higher bound)
-
-[build] Make it so that the visual bound indicators (the circles) also cannot be inverted
-
-[build] When the low slider is in the leftmost position, there should be no lower bound, and when the high slider is in the rightmost position, there should be no higher bound
-
-[build] I added a year field to each publication, make sure it's checked when filtering
+[build] Each publication now has a `year` field. Update the search logic to include it when filtering data.
 
 (we implemented backend code for data storage, endpoints for all the homepage components and some get methods for the other pages, then asked the ai to continue)
 
-[build] Continue the backend implementation. All services have implemented GET endpoints and the home service has its controller implemented. Add the other controllers and add search functionality to the publications service
+[build] Continue the backend implementation. All services have implemented GET endpoints and the home service has its controller implemented. Add the other controllers and move the publications searching and filtering functionality from the client to the server. Follow the same pattern used in the Home controller.
 
-[build] Use `v-if` like in `Projects.js` to make sure components don't render when their data is undefined. And make sure all data is undefined until fetched
+[build] In every component that fetches data from the backend, use `v-if` directives, like in `Projects.js`, to make sure they don't attempt to render code that access properties of the fetch data while it's not available. By default all data should be `undefined` before it's fetched.
 
-[build] Implement light<->dark theme switching logic on the client side
+[build] Implement light<->dark theme switching logic on the client side using the built-in HTML `data-theme` attribute. The default theme should refer to the system's preference. The theme should be persisted in `localStorage`.
 
-[build] Add language switching logic (english <-> romanian). For now just keep it client-side and make the backend only log the requested language while still returning english regardless
+[build] Add exclusively client-side language switching logic (english <-> romanian). Store the selected locale in `localStorage`. On the backend log the requested language but keep the rest of the logic unchanged, as it will be handled later. By default English should be used.
 
-[build] Now update the backend to serve data in the requested language. Do not change the english default data, instead add a separate export for the romanian translations
+[build] Update the backend to serve data in the requested language. Keep the existing English data as-is and create a new file for default Romaian data, following the same schema. Use the previously logged `lang` parameter to select which data to serve.
 
 --------------------------------------------------------------------------------------
 
@@ -48,4 +34,4 @@ Tooling: llama-server
 
 (shared a string with all publications copied directly from the desy pdf to have the ai format it)
 
-Considering the following text [...] extract the publications into an array of JSON objects in the following schema: `{title:string, authors:string[], venue:string, year:number}`. An author should be formatted lastname-comma-space-initial-dot, as in "Doe, J." or "Parker, P.B." for multiple initials. For the venue keep the year, id and other numbers that may appear. The year can be extracted from the publication string if not otherwise specified.
+Considering the following text [...] extract the publications into an array of JSON objects in the following schema: `{title: string, authors: string[], venue: string, year: number}`. An author should be formatted lastname-comma-space-initial-dot, as in "Doe, J." or "Parker, P.B." for multiple initials. For the venue keep the year, id and other numbers that may appear. The year can be extracted from the publication string if not otherwise specified. Preserve the order as in the original text. Return only the JSON array, with no additional explanations.
