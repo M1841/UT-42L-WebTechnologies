@@ -501,8 +501,7 @@ export const data = {
         first: "Liviu",
         last: "Miclea",
       },
-      image:
-        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=NH--aSUAAAAJ&citpid=1",
+      image: "data/images/team/director.jpg",
       links: {
         email: "Liviu.Miclea@aut.utcluj.ro",
         linkedin: "https://ro.linkedin.com/in/liviu-miclea-4296394a",
@@ -516,7 +515,7 @@ export const data = {
           first: "Honoriu",
           last: "Vălean",
         },
-        image: "https://icstcc2025.utcluj.ro/img/people/valean_honoriu.jpg",
+        image: "data/images/team/valean_honoriu.jpg",
         links: {
           email: "Honoriu.Valean@aut.utcluj.ro",
           linkedin: undefined,
@@ -529,7 +528,7 @@ export const data = {
           first: "Silviu",
           last: "Folea",
         },
-        image: "https://users.utcluj.ro/~sfolea/Folea%20Silviu%202024.jpeg",
+        image: "data/images/team/folea_silviu.jpeg",
         links: {
           email: "silviu.folea@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/silviu-folea-245219149",
@@ -542,8 +541,7 @@ export const data = {
           first: "Ovidiu",
           last: "Stan",
         },
-        image:
-          "https://osean.uma.pt/wp-content/uploads/2023/07/Ovidiu-Stan.png",
+        image: "data/images/team/stan_ovidiu.png",
         links: {
           email: "ovidiu.stan@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/ovidiu-stan",
@@ -556,8 +554,7 @@ export const data = {
           first: "Szilard",
           last: "Enyedi",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Qcly87MAAAAJ&citpid=1",
+        image: "data/images/team/enyedi_szilard.jpg",
         links: {
           email: "Szilard.Enyedi@aut.utcluj.ro",
           linkedin: undefined,
@@ -570,7 +567,7 @@ export const data = {
           first: "Dan",
           last: "Goța",
         },
-        image: "https://users.utcluj.ro/~dangota/pics/pic1.png",
+        image: "data/images/team/gota_dan.png",
         links: {
           email: "dan.gota@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/dan-gota-ph-d-821a073b",
@@ -583,8 +580,7 @@ export const data = {
           first: "Iulia",
           last: "Ștefan",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=RaKdkMYAAAAJ&citpid=4",
+        image: "data/images/team/stefan_iulia.jpg",
         links: {
           email: "Iulia.Stefan@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/iulia-stefan-26034864/en",
@@ -597,8 +593,7 @@ export const data = {
           first: "Cosmina",
           last: "Corcheș",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Vk_uH7gAAAAJ&citpid=2",
+        image: "data/images/team/corches_cosmina.jpg",
         links: {
           email: "Cosmina.Corches@aut.utcluj.ro",
           linkedin: "https://www.linkedin.com/pub/dir/Cosmina/Corches",
@@ -611,7 +606,7 @@ export const data = {
           first: "Adela",
           last: "Pop",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Adela.POP@aut.utcluj.ro",
           linkedin: undefined,
@@ -624,8 +619,7 @@ export const data = {
           first: "Alexandra",
           last: "Fanca",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=GyRxLkoAAAAJ&citpid=1",
+        image: "data/images/team/fanca_alexandra.jpg",
         links: {
           email: "Alexandra.FANCA@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/alexandra-fanca-656274243",
@@ -638,7 +632,7 @@ export const data = {
           first: "Claudiu",
           last: "Domuța",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Claudiu.DOMUTA@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/claudiu-domuta-27424a53",
@@ -651,7 +645,7 @@ export const data = {
           first: "Marius",
           last: "Misaroș",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Marius.Misaros@aut.utcluj.ro",
           linkedin: undefined,
@@ -666,7 +660,7 @@ export const data = {
           first: "Henrietta-Helena",
           last: "Futo",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: undefined,
           linkedin: undefined,
@@ -678,7 +672,7 @@ export const data = {
           first: "Diana-Elena",
           last: "Niți",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Diana.Niti@aut.utcluj.ro",
           linkedin: undefined,
@@ -690,7 +684,7 @@ export const data = {
           first: "Alexandru",
           last: "Stanciu",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: undefined,
           linkedin: undefined,
@@ -703,7 +697,7 @@ export const data = {
           first: "Pavel-Alexandru",
           last: "Bejan",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Alex.Bejan@utcluj.ro",
           linkedin: undefined,
@@ -715,8 +709,7 @@ export const data = {
           first: "Alexandru",
           last: "Ciobotaru",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=gLXjuR0AAAAJ&citpid=4",
+        image: "data/images/team/ciobotaru_alexandru.jpg",
         links: {
           email: "Alexandru.Ciobotaru@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/alexandru-ciobotaru-63490017b",
@@ -729,7 +722,7 @@ export const data = {
           first: "Tudor",
           last: "Covrig",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Tudor.Covrig@aut.utcluj.ro",
           linkedin: undefined,
@@ -742,7 +735,7 @@ export const data = {
           first: "Lucian",
           last: "Farmathy-Pop",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Lucian.Farmathy@aut.utcluj.ro",
           linkedin: undefined,
@@ -754,7 +747,7 @@ export const data = {
           first: "Alexandra-Elena",
           last: "Dobre",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Alexandra.Dobre@aut.utcluj.ro",
           linkedin: undefined,
@@ -767,8 +760,7 @@ export const data = {
           first: "Vlăduț",
           last: "Dobra",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=DrsrFGAAAAAJ&citpid=1",
+        image: "data/images/team/dobra_vladut.jpg",
         links: {
           email: "Vladut.DOBRA@aut.utcluj.ro",
           linkedin:
@@ -782,7 +774,7 @@ export const data = {
           first: "Andreea",
           last: "Muscan",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: undefined,
           linkedin: undefined,
@@ -794,7 +786,7 @@ export const data = {
           first: "Răzvan",
           last: "Dologa",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: undefined,
           linkedin: undefined,
@@ -806,7 +798,7 @@ export const data = {
           first: "Bogdan",
           last: "Drăghici",
         },
-        image: undefined,
+        image: "data/images/team/draghici_bogdan.jpg",
         links: {
           email: "Bogdan.Draghici@aut.utcluj.ro",
           linkedin: undefined,
@@ -819,8 +811,7 @@ export const data = {
           first: "George",
           last: "Flutur",
         },
-        image:
-          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=F-oiYGgAAAAJ&citpid=6",
+        image: "data/images/team/flutur_george.jpg",
         links: {
           email: "George.Flutur@aut.utcluj.ro",
           linkedin: "https://ro.linkedin.com/in/georgeflutur",
@@ -833,7 +824,7 @@ export const data = {
           first: "Alexandru",
           last: "Jibotean",
         },
-        image: undefined,
+        image: "data/images/team/default.jpg",
         links: {
           email: "Alexandru.Jibotean@aut.utcluj.ro",
           linkedin: undefined,
