@@ -510,10 +510,9 @@ export const data = {
       },
       disciplines: [
         "Reliability and Diagnosis",
-        "Testing of Information Systems",
+        "Automatic Testing",
         "Computer-Aided Design",
         "Distributed Systems",
-        "Dependability",
       ],
     },
     professors: [
@@ -530,10 +529,10 @@ export const data = {
             "https://scholar.google.com/citations?user=LVJtl2kAAAAJ&hl=ro",
         },
         disciplines: [
-          "Databases",
-          "Distributed Control Systems",
-          "Software Systems Engineering",
-          "Industrial Informatics",
+                "Computer Architecture",
+                "Applied Informatics",
+                "Industrial Informatics",
+                "Advanced programming techniques"
         ],
       },
       {
@@ -550,9 +549,8 @@ export const data = {
         },
         disciplines: [
           "Embedded Systems",
-          "Data Acquisition Systems",
           "Reconfigurable Systems",
-          "Wireless Sensor Networks",
+          "Microsystems and Data Acquisition"
         ],
       },
       {
@@ -607,9 +605,9 @@ export const data = {
         },
         disciplines: [
           "Computer Programming",
-          "Operating Systems and Networks",
-          "Dependability",
-          "Continuous Integration and Deployment",
+          "Industrial Informatics", 
+          "Advanced programming techniques",
+          "MSOA - Medii Software Orientate pe Aplicatie",
         ],
       },
       {
@@ -625,10 +623,10 @@ export const data = {
             "https://scholar.google.com/citations?user=RaKdkMYAAAAJ&hl=ro&oi=ao",
         },
         disciplines: [
-          "Decision Support Systems",
-          "Software Application Development and Testing",
-          "Technology for Education",
-          "Augmented Reality Applications",
+          "Computer Aided Graphics",
+          "Project Management",
+          "Digital Graphics",
+          "Software Applications Testing", 
         ],
       },
       {
@@ -644,10 +642,10 @@ export const data = {
             "https://scholar.google.com/citations?user=Vk_uH7gAAAAJ&hl=ro&oi=ao",
         },
         disciplines: [
-          "Embedded Systems",
-          "Internet of Things",
-          "Dependability",
-          "Interoperability",
+          "Project Management",
+          "Web Technologies",
+          "Computer Programming",
+          "Dependability in Cyber-Physical Systems"
         ],
       },
       {
@@ -683,7 +681,7 @@ export const data = {
         disciplines: [
           "Software Engineering",
           "Information Systems",
-          "Indoor Air Quality Monitoring",
+          "Industrial Informatics", 
         ],
       },
       {
@@ -700,7 +698,8 @@ export const data = {
         },
         disciplines: [
           "Systems Engineering",
-          "Computer Programming",
+          "Industrial Informatics",
+          "Data Transmission"
         ],
       },
       {
@@ -717,7 +716,7 @@ export const data = {
         },
         disciplines: [
           "Reliability and Diagnosis",
-          "Continuous Integration and Deployment",
+          "Computer Aided Graphics", 
           "Computer Programming",
         ],
       },
