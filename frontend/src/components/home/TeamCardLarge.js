@@ -49,12 +49,12 @@ app.component("app-team-card-large", {
     <div class="team-card-large">
       <p class="team-header">{{ header }}</p>
       <div class="member-display">
-        <img class="member-image" :src="members[visibleMemberIndex].image" />
+        <img class="member-image" :src="members[visibleMemberIndex].image ?? 'https://i.pinimg.com/474x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg?nii=t'" />
         <h3>{{ title }} {{ members[visibleMemberIndex].name.first }} {{ members[visibleMemberIndex].name.last }} {{ hasPhd ? "PhD" : ""}}</h3>
         <div class="member-links">
-          <a :href="'mailto:' + members[visibleMemberIndex].links.email" class="link-btn fas fa-envelope"></a>
-          <a :href="members[visibleMemberIndex].links.linkedin" class="link-btn fab fa-linkedin"></a>
-          <a :href="members[visibleMemberIndex].links.googleScholar" class="link-btn fab fa-google"></a>
+          <a v-if="members[visibleMemberIndex].links.email" :href="'mailto:' + members[visibleMemberIndex].links.email" class="link-btn fas fa-envelope"></a>
+          <a v-if="members[visibleMemberIndex].links.linkedin" :href="members[visibleMemberIndex].links.linkedin" class="link-btn fab fa-linkedin"></a>
+          <a v-if="members[visibleMemberIndex].links.googleScholar" :href="members[visibleMemberIndex].links.googleScholar" class="link-btn fab fa-google"></a>
         </div>
       </div>
       <div class="member-nav" v-if="members.length > 1">

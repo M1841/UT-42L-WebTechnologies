@@ -6,9 +6,9 @@ app.component("app-publications-search", {
       filterTitle: true,
       filterAuthor: true,
       filterVenue: true,
-      minYear: 2000,
+      minYear: 2016,
       maxYear: 2026,
-      rangeMin: 2000,
+      rangeMin: 2016,
       rangeMax: 2026,
       searchTimer: null,
     };
@@ -87,7 +87,7 @@ app.component("app-publications-search", {
             </label>
           </div>
           <div class="year-filter">
-            <label>Year: {{ rangeMin === minYear ? 'Any' : rangeMin }} - {{ rangeMax === maxYear ? 'Any' : rangeMax }}</label>
+            <label>Year: {{ rangeMin }} - {{ rangeMax }}</label>
             <div class="dual-slider">
               <div class="dual-slider-track"></div>
               <div
@@ -120,7 +120,7 @@ app.component("app-publications-search", {
           <h3>{{ pub.title }}</h3>
           <p class="authors">{{ pub.authors.join('; ') }}</p>
           <p class="venue">{{ pub.venue }}</p>
-          <a href="#" class="read-more">Read more</a>
+          <a :href="pub.link" class="read-more">Read more</a>
         </div>
         <div v-if="publications && publications.length === 0" class="no-results">
           No publications found

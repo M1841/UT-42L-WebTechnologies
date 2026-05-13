@@ -18,27 +18,14 @@ publicationsRouter.get("/search", (req, res) => {
   const minYear = req.query.minYear ? parseInt(req.query.minYear, 10) : 0;
   const maxYear = req.query.maxYear ? parseInt(req.query.maxYear, 10) : 9999;
 
-  const results = publications
-    .get()
-    .filter((pub) => {
-      if (!query && pub.year >= minYear && pub.year <= maxYear) return true;
-      if (!query) return false;
-
-      let matches = false;
-      if (filterTitle && pub.title.toLowerCase().includes(query)) {
-        matches = true;
-      }
-      if (
-        filterAuthor &&
-        pub.authors.some((author) => author.toLowerCase().includes(query))
-      ) {
-        matches = true;
-      }
-      if (filterVenue && pub.venue.toLowerCase().includes(query)) {
-        matches = true;
-      }
-      return matches && pub.year >= minYear && pub.year <= maxYear;
-    });
+  const results = publications.search(
+    query,
+    filterTitle,
+    filterAuthor,
+    filterVenue,
+    minYear,
+    maxYear,
+  );
 
   return res.status(200).send(results);
 });

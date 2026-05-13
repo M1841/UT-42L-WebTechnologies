@@ -41,7 +41,7 @@ app.component("app-publications-search-small", {
             <h3>{{ result.title }}</h3>
             <p class="authors">{{ result.authors.join('; ') }}</p>
             <p class="venue">{{ result.venue }}</p>
-            <a href="#" class="read-more">Read more</a>
+            <a :href="result.link" class="read-more">Read more</a>
           </div>
           <a class="view-more" href="publications.html">View more</a>
         </div>

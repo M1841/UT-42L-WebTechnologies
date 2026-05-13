@@ -65,11 +65,13 @@ app.component("app-team-director", {
           </div>
           <div class="director-publications" v-if="directorPublications.length > 0">
             <h3>Recent Publications</h3>
-            <div class="publication-item">
-              <h4>{{ directorPublications[visibleIndex].title }}</h4>
-              <p class="authors">{{ directorPublications[visibleIndex].authors.join('; ') }}</p>
-              <p class="venue">{{ directorPublications[visibleIndex].venue }}</p>
-            </div>
+            <a :href="directorPublications[visibleIndex].link" style="text-decoration: none">
+              <div class="publication-item">
+                <h4>{{ directorPublications[visibleIndex].title }}</h4>
+                <p class="authors">{{ directorPublications[visibleIndex].authors.join('; ') }}</p>
+                <p class="venue">{{ directorPublications[visibleIndex].venue }}</p>
+              </div>
+            </a>
             <div class="publication-nav">
               <button class="nav-btn" @click="decrementIndex">&lt;</button>
               <span class="page-indicator">{{ visibleIndex + 1 }} / {{ directorPublications.length }}</span>

@@ -173,6 +173,7 @@ export const data = {
   ],
   publications: [
     {
+      link: "https://www.mdpi.com/2313-7673/9/9/558",
       title:
         "A Method for Assessing the Reliability of the Pepper Robot in Handling Office Documents: A Case Study",
       authors: [
@@ -187,6 +188,7 @@ export const data = {
       year: 2024,
     },
     {
+      link: "https://www.mdpi.com/2079-9292/13/9/1613",
       title:
         "Comprehensive Security for IoT Devices with Kubernetes and Raspberry Pi Cluster",
       authors: [
@@ -199,6 +201,292 @@ export const data = {
       venue: "Electronics, 2024, 13, 9",
       year: 2024,
     },
+    {
+      link: "https://www.mdpi.com/2079-9292/13/6/1115",
+      title:
+        "Input Voltage-Level Driven Split-Input Inverter Level Shifter for Nanoscale Applications",
+      authors: ["Gundala, S.", "Basha, M.M.", "Madhurima, V.", "Stan, O.P."],
+      venue: "Electronics, 2024, 13",
+      year: 2024,
+    },
+    {
+      link: "https://www.mdpi.com/2079-9292/13/3/669",
+      title:
+        "Secure Healthcare Model Using Multi-Step Deep Q Learning Network in Internet of Things",
+      authors: [
+        "Roy, P.P.",
+        "Teju, V.",
+        "Kandula, S.R.",
+        "Sowmya, K.V.",
+        "Stan, A.I.",
+        "Stan, O.P.",
+      ],
+      venue: "Electronics 2024, 13, 669",
+      year: 2024,
+    },
+    {
+      link: "https://link.springer.com/chapter/10.1007/978-3-031-70670-7_26",
+      title:
+        "Securing the 18O Oxygen Isotope Separation Process: A Focus on Network Devices and Access Servers",
+      authors: ["Urs, P.", "Muresan, V.", "Hulea, M.", "Ștefan, I."],
+      venue:
+        "In: Cioboată, D.D. (eds) International Conference on Reliable Systems Engineering (ICoRSE) - 2024. ICoRSE 2024, vol 1129. Springer, Cham",
+      year: 2024,
+    },
+    {
+      link: "https://www.mdpi.com/2079-9292/12/24/5015",
+      title:
+        "Implementation of High-Speed Compact Level-Up Shifter for Nano-Scale Applications",
+      authors: ["Sudhakar, M.V.", "Stan, O.P."],
+      venue: "Electronics 2023, 12, 5015A",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/2076-3417/13/13/7971",
+      title:
+        "Solution for the Mathematical Modeling and Future Prediction of the COVID-19 Pandemic Dynamics",
+      authors: [
+        "Stăncioi, C.-M.",
+        "Ștefan, I.A.",
+        "Briciu, V.",
+        "Mureșan, V.",
+        "Clitan, I.",
+        "Abrudean, M.",
+        "Ungureșan, M.-L.",
+        "Miron, R.",
+        "Stativă, E.",
+        "Nanu, M.",
+      ],
+      venue: "Appl. Sci. 2023, 13, 7971",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/2076-3417/13/14/8525",
+      title: "A Hybrid Retina Net Classifier for Thermal Imaging",
+      authors: [
+        "Ventrapragada, T.",
+        "Sowmya, K.V.",
+        "Kandula, S.R.",
+        "Stan, A.",
+        "Stan, O.P.",
+      ],
+      venue: "Applied Sciences-Basel, Vol. 13, 14, 2023",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/23/10/4962",
+      title:
+        "Autonomous Robots for Services - State of the art, Challenges, and Research Areas",
+      authors: ["Misaros, M.", "Stan, O.P.", "Donca, I.", "Miclea, L."],
+      venue: "Sensors, Vol. 23, 10",
+      year: 2023,
+    },
+    {
+      link: "https://link.springer.com/chapter/10.1007/978-3-031-34411-4_11",
+      title:
+        "Technology and Education as Drivers of the Fourth Industrial Revolution Through the Lens of the New Science of Learning",
+      authors: ["Ștefan, I.", "et al."],
+      venue: "HCII 2023. LNCS, vol 14040. Springer",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/23/21/9001",
+      title: "Long-Range Network of Air Quality Index Sensors in an Urban Area",
+      authors: [
+        "Dobra, I.M.",
+        "Dobra, V.A.",
+        "Dobra, A.A.",
+        "Harja, G.",
+        "Folea, S.",
+        "Gavra, V.D.",
+      ],
+      venue: "Sensors 23, 9001A",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/2076-3417/13/10/5932",
+      title:
+        "Mathematical Modeling and Digital Simulation of Teeth Dynamics for the Approximation of Orthodontic Treatment Duration",
+      authors: [
+        "Bunta, O.",
+        "Festila, D.",
+        "Muresan, V.",
+        "Colosi, T.",
+        "Stan, O.",
+        "Unguresan, M.",
+        "Baciut, M.",
+      ],
+      venue: "Applied Sciences-Basel, Vol. 13, 10, 2023",
+      year: 2023,
+    },
+    {
+      link: "https://www.researchgate.net/profile/Alexandra-Fanca/publication/366760769_Monitoring_and_Prediction_of_Indoor_Air_Quality_for_Enhanced_Occupational_Health/links/64184001a1b72772e4127a61/Monitoring-and-Prediction-of-Indoor-Air-Quality-for-Enhanced-Occupational-Health.pdf",
+      title:
+        "Monitoring and Prediction of Indoor Air Quality for Enhanced Occupational Health",
+      authors: ["Pop, A.", "Fanca, A.", "Gota, D.", "Valean, H."],
+      venue:
+        "Intelligent Automation & Soft Computing, Vol.35, No.1, pp. 925-940, 2023",
+      year: 2023,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/22/22/8872",
+      title:
+        "Analysis of the Application Efficiency of TensorFlow and PyTorch in Convolutional Neural Network",
+      authors: [
+        "Novac, O.-C.",
+        "Chirodea, M.C.",
+        "Novac, C.M.",
+        "Bizon, N.",
+        "Oproescu, M.",
+        "Stan, O.P.",
+        "Gordan, C.E.",
+      ],
+      venue: "Sensors 22, no. 22: 8872",
+      year: 2022,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/22/12/4637",
+      title:
+        "Method for Continuous Integration and Deployment Using a Pipeline Generator for Agile Software Projects",
+      authors: [
+        "Donca, I.C.",
+        "Stan, O.P.",
+        "Misaros, M.",
+        "Gota, D.",
+        "Miclea, L.",
+      ],
+      venue: "Sensors 22, no. 12: 4637",
+      year: 2022,
+    },
+    {
+      link: "https://www.mdpi.com/2227-9717/10/2/219",
+      title:
+        "Flexible Augmented Reality-Based Health Solution for Medication Weight Establishment",
+      authors: ["Berciu, A.G.", "Dulf, E.H.", "Ștefan, I.A."],
+      venue: "Processes, 2022, vol. 10, 2, page 219",
+      year: 2022,
+    },
+    {
+      link: "https://ieeexplore.ieee.org/abstract/document/9872818/",
+      title:
+        "Demographic Attributes Classification via Convolutional Neural Networks: A Proposed Solution",
+      authors: [
+        "Ciobotariu, A.",
+        "Gota, D.",
+        "Pop, A.",
+        "Stan, O.",
+        "Fanca, A.",
+        "Domuta, C.",
+        "Valean, H.",
+        "Miclea, L.",
+      ],
+      venue: "Proc. of 2022 ICECET, 2022, Prague, pp. 1-6",
+      year: 2022,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/21/18/6220",
+      title:
+        "Availability of a RFID Object Identification System in IoT Environment",
+      authors: ["Corches, C.", "Daraban, M.", "Miclea, L."],
+      venue: "Sensors, ISSN 1424-8220, Vol 21, 18, Sep. 2021",
+      year: 2021,
+    },
+    {
+      link: "https://www.researchgate.net/profile/Harshita-Patel-2/publication/355411672_A_New_Fuzzy_Adaptive_Algorithm_to_Classify_Imbalanced_Data/links/642d59d920f25554da0fe3c8/A-New-Fuzzy-Adaptive-Algorithm-to-Classify-Imbalanced-Data.pdf",
+      title: "A New Fuzzy Adaptive Algorithm to Classify Imbalanced Data",
+      authors: ["Patel, H.", "Rajput, D.S.", "Stan, O.P.", "Miclea, L.C."],
+      venue:
+        "CMC-Computers, Materials & Continua, Vol.70, No.1, pp. 73-89, 2022",
+      year: 2022,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/21/17/5920",
+      title:
+        "A Review of Recent Advances in Fractional Order Sensing and Filtering Techniques",
+      authors: [
+        "Muresan, C.",
+        "Birs, I.",
+        "Dulf, E.",
+        "Copot, D.",
+        "Miclea, L.",
+      ],
+      venue: "Sensors, ISSN 1424-8220, vol. 21, 17, article number: 5920, 2021",
+      year: 2021,
+    },
+    {
+      link: "https://www.mdpi.com/1424-8220/21/14/4714",
+      title: "Method to Increase Dependability in a Cloud-Fog-Edge Environment",
+      authors: [
+        "Stan, O.P.",
+        "Enyedi, S.",
+        "Corches, C.",
+        "Flonta, S.",
+        "Ștefan, I.",
+        "Gota, D.",
+        "Miclea, L.",
+      ],
+      venue: "Sensors 2021, 21, 4714",
+      year: 2021,
+    },
+    {
+      link: "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=6996",
+      title:
+        "Interconnection of Systems with Cloud-Fog-Edge architectures: Concept and Challenges",
+      authors: [
+        "Corches, C.",
+        "Daraban, M.",
+        "Stan, O.",
+        "Enyedi, Sz.",
+        "Miclea, L.",
+      ],
+      venue:
+        "Control Engineering And Applied Informatics, vol 23, 1, pp.60-71, 2021",
+      year: 2021,
+    },
+    {
+      link: "https://ieeexplore.ieee.org/abstract/document/9129954/",
+      title:
+        "Towards Testing Considerations Of Experimental Decision Support System Design",
+      authors: ["Ștefan, I.", "Miclea, L.", "Vălean, H."],
+      venue:
+        "2020 IEEE International Conference on Automation, Quality and Testing, Robotics (AQTR), 2020, pp. 1-6",
+      year: 2020,
+    },
+    {
+      link: "https://univagora.ro/jour/index.php/ijccc/article/view/4260",
+      title:
+        "Development and Analysis of a Low-Cost IoT Sensor for Urban Environmental Monitoring",
+      authors: ["Muntean, I.", "Mois, G.D.", "Folea, S.C."],
+      venue:
+        "International Journal of Computers Communications & Control, Vol. 16, No. 5, 2021",
+      year: 2021,
+    },
+    {
+      link: "https://ieeexplore.ieee.org/abstract/document/9129910/",
+      title:
+        "Using Cognitive Services within CPS/SCADA Systems Federations - Concepts, Research Areas and Challenges",
+      authors: ["Scurtu, A.", "Dehelean, C.", "Enyedi, S.", "Miclea, L."],
+      venue:
+        "2020 IEEE International Conference on Automation, Quality and Testing, Robotics (AQTR), Cluj-Napoca, Romania, 2020, pp. 1-4",
+      year: 2020,
+    },
+    {
+      link: "https://link.springer.com/chapter/10.1007/978-981-13-6207-1_49",
+      title:
+        "New Era for Technology in Healthcare Powered by GDPR and Blockchain",
+      authors: ["Stan, O.", "Miclea, L."],
+      venue:
+        "MediTech, Cluj Napoca, Romania, OCT 17-20, 2018, IFMBE Proceedings, Volume: 71, Pages: 311-317, Springer",
+      year: 2018,
+    },
+    {
+      link: "http://pub.osim.ro/publication-server/document?PN=RO130282%20RO%20130282&iDocId=10595&iPosition=0&iFormat=0",
+      title:
+        "Method for the dynamic voltage scaling in an arithmetic-logic unit based on on-line error detection",
+      authors: ["Figueras, J.", "Miclea, L.", "Moiş, G."],
+      venue: "Patent no. OSIM: 130282/30.03.2018",
+      year: 2018,
+    },
   ],
   team: {
     director: {
@@ -206,11 +494,13 @@ export const data = {
         first: "Liviu",
         last: "Miclea",
       },
-      image: " ",
+      image:
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=NH--aSUAAAAJ&citpid=1",
       links: {
         email: "Liviu.Miclea@aut.utcluj.ro",
-        linkedin: "",
-        googleScholar: "",
+        linkedin: "https://ro.linkedin.com/in/liviu-miclea-4296394a",
+        googleScholar:
+          "https://scholar.google.com/citations?user=NH--aSUAAAAJ&hl=en",
       },
     },
     professors: [
@@ -219,11 +509,12 @@ export const data = {
           first: "Honoriu",
           last: "Vălean",
         },
-        image: " ",
+        image: "https://icstcc2025.utcluj.ro/img/people/valean_honoriu.jpg",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Honoriu.Valean@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=LVJtl2kAAAAJ&hl=ro",
         },
       },
       {
@@ -231,11 +522,12 @@ export const data = {
           first: "Silviu",
           last: "Folea",
         },
-        image: " ",
+        image: "https://users.utcluj.ro/~sfolea/Folea%20Silviu%202024.jpeg",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "silviu.folea@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/silviu-folea-245219149",
+          googleScholar:
+            "https://scholar.google.com/citations?user=nQaILkAAAAAJ&hl=ro",
         },
       },
       {
@@ -243,11 +535,13 @@ export const data = {
           first: "Ovidiu",
           last: "Stan",
         },
-        image: " ",
+        image:
+          "https://osean.uma.pt/wp-content/uploads/2023/07/Ovidiu-Stan.png",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "ovidiu.stan@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/ovidiu-stan",
+          googleScholar:
+            "https://scholar.google.com/citations?user=37dl-9oAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -255,11 +549,13 @@ export const data = {
           first: "Szilard",
           last: "Enyedi",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Qcly87MAAAAJ&citpid=1",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Szilard.Enyedi@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=Qcly87MAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -267,11 +563,12 @@ export const data = {
           first: "Dan",
           last: "Goța",
         },
-        image: " ",
+        image: "https://users.utcluj.ro/~dangota/pics/pic1.png",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "dan.gota@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/dan-gota-ph-d-821a073b",
+          googleScholar:
+            "https://scholar.google.com.hk/citations?user=pLH2dGYAAAAJ",
         },
       },
       {
@@ -279,11 +576,13 @@ export const data = {
           first: "Iulia",
           last: "Ștefan",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=RaKdkMYAAAAJ&citpid=4",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Iulia.Stefan@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/iulia-stefan-26034864/en",
+          googleScholar:
+            "https://scholar.google.com/citations?user=RaKdkMYAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -291,11 +590,13 @@ export const data = {
           first: "Cosmina",
           last: "Corcheș",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Vk_uH7gAAAAJ&citpid=2",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Cosmina.Corches@aut.utcluj.ro",
+          linkedin: "https://www.linkedin.com/pub/dir/Cosmina/Corches",
+          googleScholar:
+            "https://scholar.google.com/citations?user=Vk_uH7gAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -303,11 +604,12 @@ export const data = {
           first: "Adela",
           last: "Pop",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Adela.POP@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=N-PgEDoAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -315,11 +617,13 @@ export const data = {
           first: "Alexandra",
           last: "Fanca",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=GyRxLkoAAAAJ&citpid=1",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Alexandra.FANCA@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/alexandra-fanca-656274243",
+          googleScholar:
+            "https://scholar.google.com/citations?user=GyRxLkoAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -327,11 +631,12 @@ export const data = {
           first: "Claudiu",
           last: "Domuța",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Claudiu.DOMUTA@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/claudiu-domuta-27424a53",
+          googleScholar:
+            "https://scholar.google.com/citations?user=yX9sRDwAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -339,11 +644,12 @@ export const data = {
           first: "Marius",
           last: "Misaroș",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Marius.Misaros@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=E_0BTCgAAAAJ&hl=ro&oi=ao",
         },
       },
     ],
@@ -353,11 +659,11 @@ export const data = {
           first: "Henrietta-Helena",
           last: "Futo",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: undefined,
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -365,11 +671,11 @@ export const data = {
           first: "Diana-Elena",
           last: "Niți",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Diana.Niti@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -377,11 +683,12 @@ export const data = {
           first: "Alexandru",
           last: "Stanciu",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: undefined,
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=MKMEgiYAAAAJ&hl=en",
         },
       },
       {
@@ -389,11 +696,11 @@ export const data = {
           first: "Pavel-Alexandru",
           last: "Bejan",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Alex.Bejan@utcluj.ro",
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -401,11 +708,13 @@ export const data = {
           first: "Alexandru",
           last: "Ciobotaru",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=gLXjuR0AAAAJ&citpid=4",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Alexandru.Ciobotaru@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/alexandru-ciobotaru-63490017b",
+          googleScholar:
+            "https://scholar.google.com/citations?user=gLXjuR0AAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -413,11 +722,12 @@ export const data = {
           first: "Tudor",
           last: "Covrig",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Tudor.Covrig@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=e_TaZU8AAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -425,11 +735,11 @@ export const data = {
           first: "Lucian",
           last: "Farmathy-Pop",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Lucian.Farmathy@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -437,11 +747,12 @@ export const data = {
           first: "Alexandra-Elena",
           last: "Dobre",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Alexandra.Dobre@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=iVT6_KsAAAAJ&hl=ro&oi=ao",
         },
       },
       {
@@ -449,11 +760,14 @@ export const data = {
           first: "Vlăduț",
           last: "Dobra",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=DrsrFGAAAAAJ&citpid=1",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Vladut.DOBRA@aut.utcluj.ro",
+          linkedin:
+            "https://ro.linkedin.com/in/vlad-dobra?trk=public_post_feed-actor-name",
+          googleScholar:
+            "https://scholar.google.com/citations?user=DrsrFGAAAAAJ&hl=en",
         },
       },
       {
@@ -461,11 +775,11 @@ export const data = {
           first: "Andreea",
           last: "Muscan",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: undefined,
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -473,11 +787,11 @@ export const data = {
           first: "Răzvan",
           last: "Dologa",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: undefined,
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
       {
@@ -485,11 +799,12 @@ export const data = {
           first: "Bogdan",
           last: "Drăghici",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Bogdan.Draghici@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar:
+            "https://scholar.google.com/citations?user=zFwWo9YAAAAJ&hl=en",
         },
       },
       {
@@ -497,11 +812,13 @@ export const data = {
           first: "George",
           last: "Flutur",
         },
-        image: " ",
+        image:
+          "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=F-oiYGgAAAAJ&citpid=6",
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "George.Flutur@aut.utcluj.ro",
+          linkedin: "https://ro.linkedin.com/in/georgeflutur",
+          googleScholar:
+            "https://scholar.google.com/citations?user=zFwWo9YAAAAJ&hl=en",
         },
       },
       {
@@ -509,11 +826,11 @@ export const data = {
           first: "Alexandru",
           last: "Jibotean",
         },
-        image: " ",
+        image: undefined,
         links: {
-          email: "",
-          linkedin: "",
-          googleScholar: "",
+          email: "Alexandru.Jibotean@aut.utcluj.ro",
+          linkedin: undefined,
+          googleScholar: undefined,
         },
       },
     ],
