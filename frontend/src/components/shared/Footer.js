@@ -2,17 +2,30 @@ app.component("app-footer", {
   data() {
     return {
       footer: undefined,
-      darkMode: false,
+      darkMode: true,
     };
   },
   mounted() {
-    this.darkMode = document.documentElement.getAttribute("data-theme") === "dark";
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      this.darkMode = savedTheme === "dark";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else {
+      this.darkMode = true;
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
     const locale = window.i18n.locale;
     fetch("/api/shared/footer?lang=" + locale).then((res) => {
       res.json().then((json) => {
         this.footer = json;
       });
     });
+    window.addEventListener("storage", this.handleStorageChange);
+    window.addEventListener("themeChanged", this.handleCustomEvent);
+  },
+  beforeUnmount() {
+    window.removeEventListener("storage", this.handleStorageChange);
+    window.removeEventListener("themeChanged", this.handleCustomEvent);
   },
   methods: {
     toggleTheme() {
@@ -20,6 +33,15 @@ app.component("app-footer", {
       const theme = this.darkMode ? "dark" : "light";
       document.documentElement.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
+      window.dispatchEvent(new CustomEvent("themeChanged", { detail: { theme } }));
+    },
+    handleStorageChange(e) {
+      if (e.key === "theme") {
+        this.darkMode = e.newValue === "dark";
+      }
+    },
+    handleCustomEvent(e) {
+      this.darkMode = e.detail.theme === "dark";
     },
     toggleLanguage() {
       const newLocale = window.i18n.locale === "en" ? "ro" : "en";

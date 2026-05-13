@@ -2,7 +2,7 @@ export const data = {
   areas: {
     areas: [
       {
-        image: " ",
+        image: "data/images/expertise/dep_sec.jpg",
         title: "Dependability. Security",
         paragraphs: [
           "Development of intelligent techniques for dependability (availability, reliability, safety, security, integrity and maintainability), security (confidentially) and testing of information system",
@@ -10,7 +10,7 @@ export const data = {
         ],
       },
       {
-        image: " ",
+        image: "data/images/expertise/CPS.jpg",
         title: "Cyber-Physical Systems",
         paragraphs: [
           "Development of abstractions, models, architectures and tools to allow implementation of reliable CPSs (including areas as cloud-fog-edge architectures) made from unsafe components and resistant CPSs at cyber or physical attacks",
@@ -18,7 +18,7 @@ export const data = {
         ],
       },
       {
-        image: " ",
+        image: "data/images/expertise/intell_sys.jpg",
         title: "Intelligent Systems",
         paragraphs: [
           "Analyses, design, implementation and testing of intelligent real-time control and monitoring systems using artificial intelligence techniques (intelligent agents, fuzzy logic, machine learning, decision support systems, deep neural networks",
@@ -55,7 +55,14 @@ export const data = {
     lastUpdated: "May 2026",
   },
   gallery: {
-    images: [" ", " ", " ", " ", " ", " "],
+    images: [
+      "data/images/gallery/blockchain.png",
+      "data/images/gallery/cRIO_systems.jpg",
+      "data/images/gallery/dependability.jpg",
+      "data/images/gallery/CPS.jpg",
+      "data/images/gallery/overall_cloud_fog.png",
+      "data/images/gallery/university.jpg"
+    ],
   },
   header: {
     links: [
@@ -83,14 +90,14 @@ export const data = {
           "Analysis, design, implementation and validation of dependable CPSs used in water resources management, electrical power generation and transport, cloud-fog-edge infrastructure",
           "Application of artificial intelligence techniques in energy production, medicine, food quality control",
         ],
-        img: " ",
+        img: "data/images/offers/rnd.jpg",
       },
       {
         title: "Consulting",
         paragraphs: [
           "Consulting, research, design, development of dependable information systems and intelligent systems for industrial and scientific environment",
         ],
-        img: " ",
+        img: "data/images/offers/consulting.jpg",
       },
       {
         title: "Applied engineering services",
@@ -99,7 +106,7 @@ export const data = {
           "Programming and software and hardware consultancy services",
           "Intelligent systems design and implementation services",
         ],
-        img: " ",
+        img: "data/images/offers/aes.jpg",
       },
       {
         title: "Training: Dependability basics",
@@ -108,7 +115,7 @@ export const data = {
           "Software testing techniques: functional testing, structural testing, use of software testing frameworks",
           "Artificial intelligence techniques: AI agents, multi-agent systems, machine learning",
         ],
-        img: " ",
+        img: "data/images/offers/training.jpg",
       },
     ],
   },
@@ -118,20 +125,20 @@ export const data = {
       name: "Cybersecurity Seminars",
       description:
         "TUCN Project, funded by the Google Cybersecurity Seminars Program",
-      image: " ",
+      image: "data/images/publications/cyber_sem.jpg",
     },
     {
       year: "2024-2025",
       name: "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
       description: "Ro-Fr Bilateral Cooperation, École Centrale de Lyon",
-      image: " ",
+      image: "data/images/publications/fortifyai.jpg",
     },
     {
       year: "2021-2023",
       name: "The Innovative European University of Technology (Inno-EUt+)",
       description:
         "a HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUt+)",
-      image: " ",
+      image: "data/images/publications/innoeut.jpg",
     },
     {
       year: "2018-2020",
